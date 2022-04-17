@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title id="page_title">遊戲の小部屋</title>
+        <link rel="stylesheet" type="text/css" href="../common/format.css">
+        <link rel="stylesheet" type="text/css" href="./main.css">
+    </head>
+    <body>
+        <header>
+            <iframe class="header" src="../common/header.html" frameborder="0"></iframe>
+        </header>
+        <div class="contents">
+            <iframe class="menu" src="../common/menu.html" frameborder="0"></iframe>
+
+            <div class="main">
+                <h1 id="title"><img class="icon" src="../common/images/game.png" />遊戲の小部屋</h1>
+                <span class="greeting">いらっしゃいませ。心ゆくまでおくつろぎください。</span>
+                <p>と言ってはみたものの、特にこれといったおもてなしをご用意しているわけではございません。お気に召すものをご自由にお取りください。取れないけどね。<br>それぞれのゲームのページで、そのタイトル(大きな文字でゲーム名が書いてある部分)をクリックすると、新しいページが開きます。ゲームのプレイ方法が分からない、またはゲームを詳しく知りたいときにご活用ください。<br>なお、ここにあるゲームの一部は、既存のゲームの模倣です。従って、操作性やデザインなどが原作とは異なることがあります。</p>
+
+                <h2>セル系のゲーム</h2>
+                <div class="container">
+                    <p>複数のセル、つまりマス目が格子状に並んでいる盤において展開される類のゲーム群です。いわゆる「昔からあるゲーム」の多くはこれに属す...のかな。これらのゲームは全て、セルを制御する同一のプログラムの拡張で作ってます。まあプレイ上はどうでもいい話だけど。</p>
+                    <div class="block_container">
+                        <button onclick="location.href='./game/tetris/tetris.html'" class="block tetris">
+                            <div class="square"></div>
+                            <div class="inner_block">
+                                <h3>てとりす</h3>
+                                <p>ブロックを横一列隙間なく並べて消す落ちものゲームです。</p>
+                            </div>
+                        </button>
+                        <button onclick="location.href='./game/puyopuyo/puyopuyo.html'" class="block puyopuyo">
+                            <div class="square"></div>
+                            <div class="inner_block">
+                                <h3>ぷよぷよ</h3>
+                                <p>同じ色のぷよを４つ以上つなげて消す落ちものゲームです。</p>
+                            </div>
+                        </button>
+                        <button onclick="location.href='./game/lights_out/lights_out.html'" class="block lights_out">
+                            <div class="square"></div>
+                            <div class="inner_block">
+                                <h3>Lights Out</h3>
+                                <p>できるだけ少ない手で全てのセルを消灯させるゲームです。</p>
+                            </div>
+                        </button>
+                        <button onclick="location.href='./game/snake_game/snake_game.html'" class="block snake_game">
+                            <div class="square"></div>
+                            <div class="inner_block">
+                                <h3>へびゲーム</h3>
+                                <p>へびを外壁や自身にぶつからないように伸ばすゲームです。</p>
+                            </div>
+                        </button>
+                        <button onclick="location.href='./game/cellular_automaton/cellular_automaton.html'" class="block cellular_automaton">
+                            <div class="square"></div>
+                            <div class="inner_block">
+                                <h3>セル・オートマトン</h3>
+                                <p>ライフゲームなどのセル・オートマトンを生成できます。</p>
+                            </div>
+                        </button>
+                        <button onclick="location.href='./game/elementary_cellular_automaton/elementary_cellular_automaton.html'" class="block elementary_cellular_automaton">
+                            <div class="square"></div>
+                            <div class="inner_block">
+                                <h3>１次元セル・オートマトン</h3>
+                                <p>256種類全ての１次元セル・オートマトンを生成できます。</p>
+                            </div>
+                        </button>
+                        <button onclick="location.href='./game/maze/maze.html'" class="block maze">
+                            <div class="square"></div>
+                            <div class="inner_block">
+                                <h3>迷路：Q学習</h3>
+                                <p>AIに迷路を解かせ、機械学習の有用性を鑑賞しましょう。</p>
+                            </div>
+                        </button>
+                        <button onclick="location.href='./game/mine_sweeper/mine_sweeper.html'" class="block mine_sweeper">
+                            <div class="square"></div>
+                            <div class="inner_block">
+                                <h3>マインスイーパー</h3>
+                                <p>地雷を踏まないようにしながらその場所を探すゲームです。</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <h2>その他のゲーム</h2>
+                <div class="container">
+                    <p>思いつくがままに作ったゲームたちです。</p>
+                    <div class="block_container">
+                        <button onclick="location.href='./game/breakout/breakout.html'" class="block breakout">
+                            <div class="square"></div>
+                            <div class="inner_block">
+                                <h3>ブロック崩し</h3>
+                                <p>弾を打ち返し、画面上のブロックを全て崩すゲームです。</p>
+                            </div>
+                        </button>
+                    <div>
+                </div>
+                
+            </div>
+        </div>
+        <footer>
+            <iframe class="footer" src="../common/footer.html" frameborder="0"></iframe>
+        </footer>
+    </body>
+</html>
