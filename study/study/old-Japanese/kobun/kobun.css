@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+.block {
+    background-color: transparent;
+    margin-bottom: 40px;
+    padding: 0;
+    position: relative;
+}
+.block:hover {
+    background-color: transparent;
+}
+
+.square {
+    pointer-events: none;
+    background: transparent;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.circle {
+    transition: 0.5s;
+    width: 100%;
+    padding-top: 100%;
+    margin: 0;
+    background-color: black;
+    opacity: 0.0;
+    border-radius: 50%;
+    pointer-events: auto;
+    cursor: pointer;
+}
+.circle:hover{
+    transition: 0.5s;
+    opacity: 0.25;
+}
+
+.inner_block {
+    position: absolute;
+    width: 100%;
+    top: 21%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin: 0;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+.inner_block h3 {
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.block p {
+    margin: 20px 0 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.block button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}

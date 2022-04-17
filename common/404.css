@@ -1,0 +1,9 @@
+﻿@charset "utf-8";
+
+img {
+    margin: 0 0 5px;
+    padding: 0;
+    box-sizing: border-box;
+    width: calc(50% - 2.5px);
+    border: 1px solid transparent;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title id="page_title">二元数</title>
+        <link rel="stylesheet" type="text/css" href="../../../../common/format.css">
+        <link rel="stylesheet" type="text/css" href="../../../common/study_format.css">
+        <link rel="stylesheet" type="text/css" href="./binarion.css">
+        <script type="text/javascript" src="./binarion.js"></script>
+    </head>
+    <body>
+        <header>
+            <iframe class="header" src="../../../../common/header.html" frameborder="0"></iframe>
+        </header>
+        <div class="contents">
+            <iframe class="menu" src="../../../../common/menu.html" frameborder="0"></iframe>
+
+            <div class="main">
+                <h1 id="title"><img class="icon" src="../../../../common/images/study.png" />二元数</h1>
+                
+                <div  id="main">
+                    <div id="setup">
+                        <div class="input_area" id="rule_area">
+                            <form id="form">
+                                <p id="setup_text">u^2 = <input type="text" class="textbox" id="sq_u" value="-1" style="width:40px"><br>掛ける二元数: <span id="multiply_binarion">1 + 0u</span></p>
+                            </form>
+                        </div>
+                        <button id="reload" onclick="reload()">設定を適用して<br>再読み込み</ button>
+                    </div>
+                    <p>マウスをクリックしながら移動して、掛ける二元数の値を操作</p>
+                    <div id="canvas_area">
+                        <canvas id="canvas"></canvas>
+                    </div>
+                    <h2>かる〜い解説</h2>
+                    <p>このプログラムでは、二元数の振る舞いを視覚化できます。{1, u}という２つの基底を持つ二元数について、u^2の値を任意に定めることで、それぞれの二元数が掛け算によってどのような変化をするのかを捉えることができるように設計しました。<br>縦軸と横軸が交わる点が0 + 0uであり、目盛１つ分の間隔が"1"です。マウスでこの描画範囲上をクリックしながらなぞると、その時のマウスの位置に対応する二元数が「掛ける二元数」として取得され、これが画面上に表示されている121個の二元数それぞれに掛け算された後、描画されます。<br>u^2 = -1 のとき、これは複素数を表します。<br>u^2 = 0のとき、これは二重数を表します。<br>u^2 = 1のとき、これは分解型複素数を表します。<br>なお、u^2の値によらず常にマウスのポインタの位置にある二元数は1 + 0u、つまり1です。</p>
+                </div>
+            </div>
+        </div>    
+        <footer>
+            <iframe class="footer" src="../../../../common/footer.html" frameborder="0"></iframe>
+        </footer>
+    </body>
+</html>

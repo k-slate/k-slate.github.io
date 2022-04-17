@@ -1,0 +1,175 @@
+﻿@charset "utf-8";
+
+body {
+    background-color: #181818;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.open_button {
+    position: absolute;
+    background-color: #0ff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border: 0.5px solid #0ff;
+    transition: 0.5s;
+    opacity: 0.8;
+    display: none;
+}
+.open_button:hover {
+    background-color: #0ff;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.open_button p {
+    position: absolute;
+    width: 95%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    color: black;
+    font-size: 20px;
+    opacity: 1;
+    display: none;
+}
+
+.close_button {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 10000;
+    display: none;
+}
+
+.close_button p {
+    width: 95%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    z-index: 10001;
+    display: none;
+}
+
+.block {
+    transition: 0.5s;
+    background-color: transparent;
+    width: 100%;
+    border: solid 1px transparent;
+    border-radius: 0px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.block:hover {
+    transition: 0.5s;
+    border: solid 1px #fff;
+    background-color: #000;
+}
+
+.square {
+    transition: 0.5s;
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    margin: 0 0 0;
+    background-color: transparent;
+}
+
+.block p {
+    position: absolute;
+    width: 95%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top {
+    background-image: url("./images/top.png");
+    background-size: contain;
+}
+.top:hover {
+    background-image: url("./images/top.png");
+    background-size: contain;
+}
+.top p {
+    color: #000;
+}
+
+.study {
+    background-image: url("./images/study.png");
+    background-size: contain;
+}
+.study:hover {
+    background-image: url("./images/study.png");
+    background-size: contain;
+}
+.study p {
+    color: #fff;
+}
+
+.game {
+    background-image: url("./images/game.png");
+    background-size: contain;
+}
+.game:hover {
+    background-image: url("./images/game.png");
+    background-size: contain;
+}
+.game p {
+    color: #fff;
+}
+
+.tool {
+    background-image: url("./images/tool.png");
+    background-size: contain;
+}
+.tool:hover {
+    background-image: url("./images/tool.png");
+    background-size: contain;
+}
+.tool p {
+    color: #fff;
+}
+
+.blog {
+    background-image: url("./images/blog.png");
+    background-size: contain;
+}
+.blog:hover {
+    background-image: url("./images/blog.png");
+    background-size: contain;
+}
+.blog p {
+    color: #000;
+}
+
+
+
+@media screen and (aspect-ratio: 1 / 1) {
+    body {
+        background-color: transparent;
+        opacity = "0.85";
+    }
+    
+    .open_button {
+        display: block;
+    }
+    
+    .open_button p {
+        display: inline;
+    }
+    
+    .menu_ball {
+        display: none;
+    }
+}

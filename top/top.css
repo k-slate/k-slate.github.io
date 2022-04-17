@@ -1,0 +1,54 @@
+﻿@charset "utf-8";
+
+img {
+    width: 100%;
+}
+
+.block {
+    transition: 0.5s;
+    background-color: #181818;
+    border: 1px solid transparent;
+    padding: 0 0 0;
+    position: relative;
+}
+.block:hover {
+    transition: 0.5s;
+    border-color: #3ee;
+    background-color: #000;
+}
+
+.block h3 {
+    width: 95%;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.block p {
+    width: 95%;
+    margin: 0 auto;
+}
+
+/*h3タグに埋め込むクラス*/
+.blank {
+    transition: 0.5s;
+    position: absolute;
+    width: 95%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 30px;
+    color: transparent;
+}
+.block:hover .blank {
+    transition: 0.5s;
+    color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+    .for_four {
+        display: none;
+    }
+}

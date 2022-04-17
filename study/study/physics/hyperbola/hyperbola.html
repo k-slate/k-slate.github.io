@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title id="page_title">２点の波源からの波動</title>
+        <link rel="stylesheet" type="text/css" href="../../../../common/format.css">
+        <link rel="stylesheet" type="text/css" href="../../../common/study_format.css">
+        <link rel="stylesheet" type="text/css" href="./hyperbola.css">
+        <script type="text/javascript" src="./hyperbola.js"></script>
+    </head>
+    <body>
+        <header>
+            <iframe class="header" src="../../../../common/header.html" frameborder="0"></iframe>
+        </header>
+        <div class="contents">
+            <iframe class="menu" src="../../../../common/menu.html" frameborder="0"></iframe>
+
+            <div class="main">
+                <h1 id="title"><img class="icon" src="../../../../common/images/study.png" />２点の波源からの波動</h1>
+                
+                <div  id="main">
+                    <div id="setup">
+                        <div class="input_area" id="rule_area">
+                            <form id="form">
+                                <p id="setup_text">波源の間の距離: d = <input type="text" class="textbox" id="focus_distance" value="20" style="width:40px"><br>波長: λ = <input type="text" class="textbox" id="lambda" value="0.5" style="width:40px"><br>x > 0において描画される線の最大本数: <input type="text" class="textbox" id="m_max" value="20" style="width:40px"><br>描画の拡大率: x<input type="text" class="textbox" id="graph_magnification" value="10" style="width:40px"><br>描画範囲の横幅: <input type="text" class="textbox" id="canvas_x" value="1000" style="width:40px">px<br>描画範囲の縦幅: <input type="text" class="textbox" id="canvas_y" value="1000" style="width:40px">px<br></p>
+                            </form>
+                        </div>
+                        <button id="reload" onclick="reload()">設定を適用して<br>再読み込み</ button>
+                    </div>
+                    <p>計算量が膨大なので、描画までに数秒から数十秒の時間を要することがあります。</p>
+                    <p><span class="yellow">黄色線：波の強めあう部分の線</span><br>白色線：波の強め合う部分の近似線<br><span class="red">赤い点：波源（焦点）</span></p>
+                    <div id="canvas_area">
+                        <canvas id="canvas"></canvas>
+                    </div>
+                    <h2>かる〜い解説</h2>
+                    <p>このプログラムでは、２点の波源から発せられる同位相の波動が強め合う部分<span>（黄色）</span>、及びヤングの実験において使用されることの多い近似線（白色）を描画します。<br>当然黄色い線はその定義上、双曲線になります。一方で近似線は直線です。外側に行くほどに近似が実際の線とずれることがよく分かりますね。</p>
+                    <h2>制作の経緯</h2>
+                    <p>ヤングの実験において、観測される光点は等間隔に並ぶ。と唐突に言われ、近似式を用いて証明されたものの、本当にそうなるのだろうか。それは近似しているからにすぎないのではないか。ということで実際に仮想空間上で実験してみようとしたのが制作の経緯です。いざ作ってみると、近似がうまく行くのはかなり限定的な状況でのみだということがわかってなかなか面白いものです。</p>
+                    <h2>動作原理のちょっとした説明</h2>
+                    <p>この描画では、横軸xの値に対応する縦軸yの値をそれぞれのxについて計算して描画しています。そうすると、要請される計算量が途方もない量になるんですね。最初は普通に数十秒レベルの時間がかかっていました。そこで、実際に計算するのは第一象限だけにし、さらにyが描画範囲外になるとそこから先は計算をしないなどの仕様にして、ある程度の高速化を図っています。</p>
+                </div>
+            </div>
+        </div>    
+        <footer>
+            <iframe class="footer" src="../../../../common/footer.html" frameborder="0"></iframe>
+        </footer>
+    </body>
+</html>

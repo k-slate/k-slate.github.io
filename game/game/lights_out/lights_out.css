@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+h2 {
+    font-size: 16px;
+}
+
+#others {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    align-items: center;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+#info {
+    width: 180px;
+}
+
+#reload {
+    margin-left: 10px;
+}

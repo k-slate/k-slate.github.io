@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.entry {
+    width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+button {
+    width: 80px;
+    height: 30px;
+}
+
+#words_entry {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.p_container p {
+    display: inline;
+}
+
+#qr_size {
+    width: 50px;
+}
+
+#qr_window {
+    margin-top: 30px;
+    display: none;
+}

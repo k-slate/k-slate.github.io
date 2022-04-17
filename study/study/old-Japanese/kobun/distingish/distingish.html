@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title id="page_title">古文知識ガチャ・識別篇！</title>
+        <link rel="stylesheet" type="text/css" href="../../../../../common/format.css">
+        <link rel="stylesheet" type="text/css" href="../../../../common/study_format.css">
+        <link rel="stylesheet" type="text/css" href="./distingish.css">
+        <script type="text/javascript" src="./distingish.js"></script>
+    </head>
+    <body>
+        <header>
+            <iframe class="header" src="../../../../../common/header.html" frameborder="0"></iframe>
+        </header>
+        <div class="contents">
+            <iframe class="menu" src="../../../../../common/menu.html" frameborder="0"></iframe>
+
+            <div class="main">
+                <div onclick="word_setting(this)" id="starter">
+                画面上のどこかを<br><br>　　　　クリックせよ。
+                </div>
+                
+                <div id="title_box">
+                    <h1 id="word_title">　</h1>
+                </div>
+                
+                <div id="perfect">完</div>
+                
+                <div  id="items_container">
+                    <div class="item_container" id="connection">
+                        <h2>識別</h2>
+                        <p>全ての空欄に右の語群から言葉を選んで挿入し、識別表を完成させよ。</p>
+                        <p id="distingish_0">
+                            ①<span onclick="distingish(this)" id="blank_0">　</span>
+                            <span class="unchange" id="leader_0"></span>
+                            <span onclick="distingish(this)" id="blank_1">　</span>
+                            <span class="unchange" id="explaination_0"></span>
+                        </p>
+                        <p id="distingish_1">
+                            ②<span onclick="distingish(this)" id="blank_2">　</span>
+                            <span class="unchange" id="leader_1"></span>
+                            <span onclick="distingish(this)" id="blank_3">　</span>
+                            <span class="unchange" id="explaination_1"></span>
+                        </p>
+                        <p id="distingish_2">
+                            ③<span onclick="distingish(this)" id="blank_4">　</span>
+                            <span class="unchange" id="leader_2"></span>
+                            <span onclick="distingish(this)" id="blank_5">　</span>
+                            <span class="unchange" id="explaination_2"></span>
+                        </p>
+                        <p id="distingish_3">
+                            ④<span onclick="distingish(this)" id="blank_6">　</span>
+                            <span class="unchange" id="leader_3"></span>
+                            <span onclick="distingish(this)" id="blank_7">　</span>
+                            <span class="unchange" id="explaination_3"></span>
+                        </p>
+                        <p id="distingish_4">
+                            ⑤<span onclick="distingish(this)" id="blank_8">　</span>
+                            <span class="unchange" id="leader_4"></span>
+                            <span onclick="distingish(this)" id="blank_9">　</span>
+                            <span class="unchange" id="explaination_4"></span>
+                        </p>
+                        <p id="distingish_5">
+                            ⑥<span onclick="distingish(this)" id="blank_10">　</span>
+                            <span class="unchange" id="leader_5"></span>
+                            <span onclick="distingish(this)" id="blank_11">　</span>
+                            <span class="unchange" id="explaination_5"></span>
+                        </p>
+                    </div>
+                    <div class="item_container" id="meaning">
+                        <h2>語群</h2>
+                        <p>左でそれぞれの空欄を選択した後、それに入る適切な語を次の中から選択すること。</p>
+                        <p>
+                            ＜活用形＞<br>
+                            <span onclick="fill_blank(this)" class="group" id="item_0">未然形</span>
+                            <span onclick="fill_blank(this)" class="group" id="item_1">連用形</span>
+                            <span onclick="fill_blank(this)" class="group" id="item_2">こそ＋〜連用形</span>
+                            <span onclick="fill_blank(this)" class="group" id="item_3">終止形</span>
+                            <span onclick="fill_blank(this)" class="group" id="item_4">連体形</span>
+                            <span onclick="fill_blank(this)" class="group" id="item_5">体言・連体形</span><br>
+                            <span onclick="fill_blank(this)" class="group" id="item_6">已然形</span>
+                            <span onclick="fill_blank(this)" class="group" id="item_7">命令形</span>
+                            <span onclick="fill_blank(this)" class="group" id="item_8">サ未・四已</span>
+                            <br>＜語＞<br>
+                            <span onclick="fill_blank(this)" class="group" id="item_9">連用形接続の語</span>
+                            <span onclick="fill_blank(this)" class="group" id="item_10">已然形接続の語</span>
+                            <span onclick="fill_blank(this)" class="group" id="item_11">性質や状態を表す語</span>
+                            <span onclick="fill_blank(this)" class="group" id="item_12">助詞・副詞</span><br>
+                            <span onclick="fill_blank(this)" class="group" id="item_13">ナ行下二段活用動詞</span>
+                            <span onclick="fill_blank(this)" class="group" id="item_14">副詞</span>
+                            <span onclick="fill_blank(this)" class="group" id="item_15">「蹴る」</span>
+                            <span onclick="fill_blank(this)" class="group" id="item_16">「する」</span>
+                            <span onclick="fill_blank(this)" class="group" id="item_17">「そのように」</span>
+                            <br>＜語の一部＞<br>
+                            <span onclick="fill_blank(this)" class="group" id="item_18">カ行四段活用動詞の語幹</span>
+                            <span onclick="fill_blank(this)" class="group" id="item_19">形容詞の語幹・終止形相当語</span>
+                            <span onclick="fill_blank(this)" class="group" id="item_20">用言や助動詞の語幹</span><br>
+                            <span onclick="fill_blank(this)" class="group" id="item_21">死・往（去）</span>
+                            <span onclick="fill_blank(this)" class="group" id="item_22">て・に</span>
+                            <span onclick="fill_blank(this)" class="group" id="item_23">に・と</span>
+                            <span onclick="fill_blank(this)" class="group" id="item_24">ま</span>
+                            <span onclick="fill_blank(this)" class="group" id="item_25">べ・まじ・まほし</span>
+                            <span onclick="fill_blank(this)" class="group" id="item_26">や</span>
+                            <br>＜その他＞<br>
+                            <span onclick="fill_blank(this)" class="group" id="item_27">。</span>
+                            <span onclick="fill_blank(this)" class="group" id="item_28">なくても意味が通じる</span>
+                        </p>
+                    </div>
+                    <div onclick="check()" id="decision">確定</div>
+                </div>
+            </div>
+        </div>    
+        <footer>
+            <iframe class="footer" src="../../../../../common/footer.html" frameborder="0"></iframe>
+        </footer>
+    </body>
+</html>

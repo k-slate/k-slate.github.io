@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title id="page_title">古文知識ガチャ・助動詞篇！</title>
+        <link rel="stylesheet" type="text/css" href="../../../../../common/format.css">
+        <link rel="stylesheet" type="text/css" href="../../../../common/study_format.css">
+        <link rel="stylesheet" type="text/css" href="./jyodoshi.css">
+        <script type="text/javascript" src="./jyodoshi.js"></script>
+    </head>
+    <body>
+        <header>
+            <iframe class="header" src="../../../../../common/header.html" frameborder="0"></iframe>
+        </header>
+        <div class="contents">
+            <iframe class="menu" src="../../../../../common/menu.html" frameborder="0"></iframe>
+
+            <div class="main">
+                <div onclick="word_setting(this)" id="starter">
+                画面上のどこかを<br><br>　　　　クリックせよ。
+                </div>
+                
+                <div id="title_box">
+                    <h1 id="word_title">　</h1>
+                </div>
+                
+                <div id="perfect">完</div>
+                
+                <div  id="items_container">
+                    <div class="item_container" id="connection">
+                        <h2>接続</h2>
+                        <p>適切な接続を選択せよ。＊特殊型：接続が複数、もしくは用言に接続しないもの</p>
+                        <p>
+                            <span onclick="select_connection(this)" id="connection_0">未然形</span>
+                            <span onclick="select_connection(this)" id="connection_1">連用形</span>
+                            <span onclick="select_connection(this)" id="connection_2">終止形</span>
+                            <span onclick="select_connection(this)" id="connection_3">連体形</span>
+                            <span onclick="select_connection(this)" id="connection_4">已然形</span>
+                            <span onclick="select_connection(this)" id="connection_5">命令形</span>
+                            <span onclick="select_connection(this)" id="connection_6">特殊型</span>
+                        </p>
+                    </div>
+                    <div class="item_container" id="katsuyou">
+                        <h2>活用</h2>
+                        <p>表の各部分を選択し、適切な活用を埋めよ。</p>
+                        <table>
+                            <tr>
+                                <th></th>
+                                <th>未然形</th>
+                                <th>連用形</th>
+                                <th>終止形</th>
+                                <th>連体形</th>
+                                <th>已然形</th>
+                                <th>命令形</th>
+                            </tr>
+                            <tr>
+                                <th>主活用</th>
+                                <th onclick="set_text(this)" class="select_table" id="katsuyou_0">◯</th>
+                                <th onclick="set_text(this)" class="select_table" id="katsuyou_1">◯</th>
+                                <th onclick="set_text(this)" class="select_table" id="katsuyou_2">◯</th>
+                                <th onclick="set_text(this)" class="select_table" id="katsuyou_3">◯</th>
+                                <th onclick="set_text(this)" class="select_table" id="katsuyou_4">◯</th>
+                                <th onclick="set_text(this)" class="select_table" id="katsuyou_5">◯</th>
+                            </tr>
+                            <tr>
+                                <th>補助活用</th>
+                                <th onclick="set_text(this)" class="select_table" id="katsuyou_6">◯</th>
+                                <th onclick="set_text(this)" class="select_table" id="katsuyou_7">◯</th>
+                                <th onclick="set_text(this)" class="select_table" id="katsuyou_8">◯</th>
+                                <th onclick="set_text(this)" class="select_table" id="katsuyou_9">◯</th>
+                                <th onclick="set_text(this)" class="select_table" id="katsuyou_10">◯</th>
+                                <th onclick="set_text(this)" class="select_table" id="katsuyou_11">◯</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="item_container" id="meaning">
+                        <h2>意味</h2>
+                        <p>次に列挙されている項目の中から、意味として正しいものを全て選択せよ。</p>
+                        <p>
+                            い〜う
+                            <span onclick="select_meaning(this)" id="meaning_0">意志</span>
+                            <span onclick="select_meaning(this)" id="meaning_1">打消</span>
+                            <span onclick="select_meaning(this)" id="meaning_2">打消推量</span>
+                            <span onclick="select_meaning(this)" id="meaning_3">打消意志</span>
+                            <span onclick="select_meaning(this)" id="meaning_4">打消当然</span>
+                            <span onclick="select_meaning(this)" id="meaning_5">受身</span>
+                            <br>え〜か<span class="small">こし</span>
+                            <span onclick="select_meaning(this)" id="meaning_6">詠嘆</span>
+                            <span onclick="select_meaning(this)" id="meaning_7">婉曲</span>
+                            <span onclick="select_meaning(this)" id="meaning_8">確述</span>
+                            <span onclick="select_meaning(this)" id="meaning_9">過去</span>
+                            <span onclick="select_meaning(this)" id="meaning_10">過去婉曲</span>
+                            <span onclick="select_meaning(this)" id="meaning_11">過去（視界外）推量</span>
+                            <br>か<span class="small">こで</span>〜か<span class="small">んゆ</span>
+                            <span onclick="select_meaning(this)" id="meaning_12">過去伝聞</span>
+                            <span onclick="select_meaning(this)" id="meaning_13">過去の原因推量</span>
+                            <span onclick="select_meaning(this)" id="meaning_14">仮定</span>
+                            <span onclick="select_meaning(this)" id="meaning_15">可能</span>
+                            <span onclick="select_meaning(this)" id="meaning_16">願望</span>
+                            <span onclick="select_meaning(this)" id="meaning_17">勧誘</span>
+                            <br>か<span class="small">んり</span>〜し<span class="small">え</span>
+                            <span onclick="select_meaning(this)" id="meaning_18">完了</span>
+                            <span onclick="select_meaning(this)" id="meaning_19">禁止</span>
+                            <span onclick="select_meaning(this)" id="meaning_20">現在推量</span>
+                            <span onclick="select_meaning(this)" id="meaning_21">現在の原因推量</span>
+                            <span onclick="select_meaning(this)" id="meaning_22">使役</span>
+                            <br>し<span class="small">つ</span>〜そ<span class="small">んさ</span>
+                            <span onclick="select_meaning(this)" id="meaning_23">実現不可能なことの希望</span>
+                            <span onclick="select_meaning(this)" id="meaning_24">自発</span>
+                            <span onclick="select_meaning(this)" id="meaning_25">推定</span>
+                            <span onclick="select_meaning(this)" id="meaning_26">推量</span>
+                            <span onclick="select_meaning(this)" id="meaning_27">尊敬</span>
+                            <span onclick="select_meaning(this)" id="meaning_28">存在</span>
+                            <br>そ<span class="small">んそ</span>〜と
+                            <span onclick="select_meaning(this)" id="meaning_29">存続</span>
+                            <span onclick="select_meaning(this)" id="meaning_30">ためらいを含んだ意志</span>
+                            <span onclick="select_meaning(this)" id="meaning_31">断定</span>
+                            <span onclick="select_meaning(this)" id="meaning_32">適当</span>
+                            <span onclick="select_meaning(this)" id="meaning_33">伝聞</span>
+                            <span onclick="select_meaning(this)" id="meaning_34">当然</span>
+                            <br>は〜め
+                            <span onclick="select_meaning(this)" id="meaning_35">反実仮想</span>
+                            <span onclick="select_meaning(this)" id="meaning_36">比況</span>
+                            <span onclick="select_meaning(this)" id="meaning_37">否定的願望</span>
+                            <span onclick="select_meaning(this)" id="meaning_38">不可能</span>
+                            <span onclick="select_meaning(this)" id="meaning_39">不適当</span>
+                            <span onclick="select_meaning(this)" id="meaning_40">命令</span>
+                        </p>
+                    </div>
+                    <div class="item_container" id="others">
+                        <h2>その他</h2>
+                        <p>意味の区別の仕方など、語れるだけ語り尽くせ！</p>
+                    </div>
+                    <div onclick="check()" id="decision">確定</div>
+                </div>
+            </div>
+        </div>    
+        <footer>
+            <iframe class="footer" src="../../../../../common/footer.html" frameborder="0"></iframe>
+        </footer>
+    </body>
+</html>

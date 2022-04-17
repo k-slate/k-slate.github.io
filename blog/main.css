@@ -1,0 +1,53 @@
+﻿@charset "utf-8";
+
+.textbox_container {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.large_textbox {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.textbox_container p {
+    font-size: 16px;
+}
+
+.date {
+    font-size: 16px;
+}
+
+.blog {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 25px;
+}
+
+.blog a {
+    text-decoration: none;
+    padding: 0 5px;
+    line-height: 28px;
+    color: #fff;
+    border: 0.5px solid transparent;
+}
+.blog a:hover {
+    text-decoration: none;
+    color: #9cf;
+    background-color: #000;
+    border: 0.5px solid #fff;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+button {
+    width: 80px;
+}
+
+.bottom {
+    margin-top: 50px;
+}
+

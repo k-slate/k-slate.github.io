@@ -1,0 +1,101 @@
+﻿@charset "utf-8";
+
+.textbox_container {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.large_textbox {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.title {
+    width: 100%;
+    border: 0.5px solid #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    transition: 200ms;
+}.title:hover {
+    background-color: #222;
+    transition: 200ms;
+}
+
+.title h3 {
+    margin: 5px 0;
+    background-color: transparent;
+    border: none;
+}
+
+.title p {
+    margin: 0 0 5px;
+}
+
+.drawer {
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 20px;
+}
+
+.drawer a {
+    display: none;
+    text-decoration: none;
+    padding: 0 5px;
+    line-height: 28px;
+    color: #fff;
+    border: 0.5px solid transparent;
+}
+.drawer a:hover {
+    text-decoration: none;
+    color: #9cf;
+    background-color: #000;
+    border: 0.5px solid #fff;
+}
+
+
+.border_top, .border_bottom {
+    width: 0;
+    height: 1px;
+    position: absolute;
+    background-color: #fff;
+    opacity: 1;
+    transition: all 200ms 0s ease;
+}
+.border_top {
+    top: 3px;
+    left: 3px;
+}
+.border_bottom {
+    bottom: 3px;
+    right: 3px;
+}
+.title:hover .border_top, .title:hover .border_bottom {
+    transition: all 200ms 0s ease;
+    width: calc(100% - 6px);
+}
+
+.border_left, .border_right {
+    width: 1px;
+    height: 0;
+    position: absolute;
+    background-color: #fff;
+    opacity: 1;
+    transition: all 200ms 0s ease;
+}
+.border_left {
+    top: 3px;
+    left: 3px;
+}
+.border_right {
+    bottom: 3px;
+    right: 3px;
+}
+.title:hover .border_left, .title:hover .border_right {
+    transition: all 200ms 0s ease;
+    height: calc(100% - 6px);
+}

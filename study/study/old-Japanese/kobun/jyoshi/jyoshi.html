@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title id="page_title">古文知識ガチャ・助詞篇！</title>
+        <link rel="stylesheet" type="text/css" href="../../../../../common/format.css">
+        <link rel="stylesheet" type="text/css" href="../../../../common/study_format.css">
+        <link rel="stylesheet" type="text/css" href="./jyoshi.css">
+        <script type="text/javascript" src="./jyoshi.js"></script>
+    </head>
+    <body>
+        <header>
+            <iframe class="header" src="../../../../../common/header.html" frameborder="0"></iframe>
+        </header>
+        <div class="contents">
+            <iframe class="menu" src="../../../../../common/menu.html" frameborder="0"></iframe>
+
+            <div class="main">
+                <div onclick="word_setting(this)" id="starter">
+                画面上のどこかを<br><br>　　　　クリックせよ。
+                </div>
+                
+                <div id="title_box">
+                    <h1 id="word_title">　</h1>
+                </div>
+                
+                <div id="perfect">完</div>
+                
+                <div  id="items_container">
+                    <div class="item_container" id="connection">
+                        <h2>接続</h2>
+                        <p>取りうる接続を全て選択せよ。＊接続助詞・一部の格／係／終助詞のみ</p>
+                        <p>
+                            <span onclick="select_connection(this)" id="connection_0">未然形</span>
+                            <span onclick="select_connection(this)" id="connection_1">連用形</span>
+                            <span onclick="select_connection(this)" id="connection_2">終止形</span>
+                            <span onclick="select_connection(this)" id="connection_3">連体形</span>
+                            <span onclick="select_connection(this)" id="connection_4">已然形</span>
+                            <span onclick="select_connection(this)" id="connection_5">命令形</span>
+                            <span onclick="select_connection(this)" id="connection_6">特殊型</span>
+                        </p>
+                    </div>
+                    <div class="item_container" id="meaning">
+                        <h2>意味</h2>
+                        <p>次に列挙されている項目の中から、意味として正しいものを全て選択せよ。</p>
+                        <p>
+                            ＜接続助詞＞<br>
+                            <span onclick="select_meaning(this)" class="setsuzoku" id="meaning_0">打消</span>
+                            <span onclick="select_meaning(this)" class="setsuzoku" id="meaning_1">逆接</span>
+                            <span onclick="select_meaning(this)" class="setsuzoku" id="meaning_2">逆接確定</span>
+                            <span onclick="select_meaning(this)" class="setsuzoku" id="meaning_3">逆接仮定</span>
+                            <span onclick="select_meaning(this)" class="setsuzoku" id="meaning_4">継続</span>
+                            <span onclick="select_meaning(this)" class="setsuzoku" id="meaning_5">原因・理由</span>
+                            <span onclick="select_meaning(this)" class="setsuzoku" id="meaning_6">順接確定</span>
+                            <br>
+                            <span onclick="select_meaning(this)" class="setsuzoku" id="meaning_7">順接仮定</span>
+                            <span onclick="select_meaning(this)" class="setsuzoku" id="meaning_8">状態</span>
+                            <span onclick="select_meaning(this)" class="setsuzoku" id="meaning_9">〜全部</span>
+                            <span onclick="select_meaning(this)" class="setsuzoku" id="meaning_10">即時</span>
+                            <span onclick="select_meaning(this)" class="setsuzoku" id="meaning_11">単純接続</span>
+                            <span onclick="select_meaning(this)" class="setsuzoku" id="meaning_12">添加</span>
+                            <span onclick="select_meaning(this)" class="setsuzoku" id="meaning_13">同時進行</span>
+                            <br>
+                            <span onclick="select_meaning(this)" class="setsuzoku" id="meaning_14">〜のままで</span>
+                            <span onclick="select_meaning(this)" class="setsuzoku" id="meaning_15">反復</span>
+                            <br>＜格助詞＞
+                            ＊「現代と同じ用法」は除く
+                            <br>
+                            <span onclick="select_meaning(this)" class="kaku" id="meaning_16">起点</span>
+                            <span onclick="select_meaning(this)" class="kaku" id="meaning_17">強意</span>
+                            <span onclick="select_meaning(this)" class="kaku" id="meaning_18">経過</span>
+                            <span onclick="select_meaning(this)" class="kaku" id="meaning_19">敬主格</span>
+                            <span onclick="select_meaning(this)" class="kaku" id="meaning_20">原因・理由</span>
+                            <span onclick="select_meaning(this)" class="kaku" id="meaning_21">限界</span>
+                            <span onclick="select_meaning(this)" class="kaku" id="meaning_22">使役の対象</span>
+                            <br>
+                            <span onclick="select_meaning(this)" class="kaku" id="meaning_23">資格・状態</span>
+                            <span onclick="select_meaning(this)" class="kaku" id="meaning_24">時間・場所</span>
+                            <span onclick="select_meaning(this)" class="kaku" id="meaning_25">主格</span>
+                            <span onclick="select_meaning(this)" class="kaku" id="meaning_26">手段・材料</span>
+                            <span onclick="select_meaning(this)" class="kaku" id="meaning_27">手段・手法</span>
+                            <span onclick="select_meaning(this)" class="kaku" id="meaning_28">準体格</span>
+                            <br>
+                            <span onclick="select_meaning(this)" class="kaku" id="meaning_29">即時</span>
+                            <span onclick="select_meaning(this)" class="kaku" id="meaning_30">同格</span>
+                            <span onclick="select_meaning(this)" class="kaku" id="meaning_31">動作を共にする相手</span>
+                            <span onclick="select_meaning(this)" class="kaku" id="meaning_32">比較の基準</span>
+                            <span onclick="select_meaning(this)" class="kaku" id="meaning_33">比喩</span>
+                            <span onclick="select_meaning(this)" class="kaku" id="meaning_34">累加・添加</span>
+                            <br>
+                            <span onclick="select_meaning(this)" class="kaku" id="meaning_35">連体修飾格</span>
+                            <span onclick="select_meaning(this)" class="kaku" id="meaning_36">連用修飾格</span>
+                            <br>＜係助詞＞<br>
+                            <span onclick="select_meaning(this)" class="kei" id="meaning_37">確認</span>
+                            <span onclick="select_meaning(this)" class="kei" id="meaning_38">疑問・反語</span>
+                            <span onclick="select_meaning(this)" class="kei" id="meaning_39">強意</span>
+                            <span onclick="select_meaning(this)" class="kei" id="meaning_40">強調</span>
+                            <span onclick="select_meaning(this)" class="kei" id="meaning_41">指示</span>
+                            <span onclick="select_meaning(this)" class="kei" id="meaning_42">推測</span>
+                            <span onclick="select_meaning(this)" class="kei" id="meaning_43">添加</span>
+                            <span onclick="select_meaning(this)" class="kei" id="meaning_44">並列</span>
+                            <br>＜副助詞＞
+                            ＊「現代と同じ用法」は除く
+                            <br>
+                            <span onclick="select_meaning(this)" class="fuku" id="meaning_45">強意</span>
+                            <span onclick="select_meaning(this)" class="fuku" id="meaning_46">限定</span>
+                            <span onclick="select_meaning(this)" class="fuku" id="meaning_47">最小限の限定</span>
+                            <span onclick="select_meaning(this)" class="fuku" id="meaning_48">程度</span>
+                            <span onclick="select_meaning(this)" class="fuku" id="meaning_49">添加（マデモ）</span>
+                            <span onclick="select_meaning(this)" class="fuku" id="meaning_50">類推（サエ）</span>
+                            <br>＜終助詞＞<br>
+                            <span onclick="select_meaning(this)" class="syu" id="meaning_51">詠嘆</span>
+                            <span onclick="select_meaning(this)" class="syu" id="meaning_52">強調</span>
+                            <span onclick="select_meaning(this)" class="syu" id="meaning_53">禁止</span>
+                            <span onclick="select_meaning(this)" class="syu" id="meaning_54">自己の願望</span>
+                            <span onclick="select_meaning(this)" class="syu" id="meaning_55">他の願望</span>
+                            <span onclick="select_meaning(this)" class="syu" id="meaning_56">他への願望</span>
+                            <span onclick="select_meaning(this)" class="syu" id="meaning_57">念を押す</span>
+                            <br>＜間投助詞＞<br>
+                            <span onclick="select_meaning(this)" class="kanto" id="meaning_58">詠嘆・呼びかけ</span>
+                        </p>
+                    </div>
+                    <div onclick="check()" id="decision">確定</div>
+                </div>
+            </div>
+        </div>    
+        <footer>
+            <iframe class="footer" src="../../../../../common/footer.html" frameborder="0"></iframe>
+        </footer>
+    </body>
+</html>

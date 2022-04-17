@@ -1,0 +1,139 @@
+﻿@charset "utf-8";
+
+h3 {
+    background-color: transparent;
+    margin: 30px 0 0;
+    border: none;
+}
+
+.container {
+    margin-left: 0px;
+}
+
+.block {
+    background-color: transparent;
+    border: 0.5px solid;
+    border-color: #777;
+    border-radius: 0px;
+    padding: 0 0 0;
+    position: relative;
+}
+.block:hover {
+    background-color: transparent;
+    border-color: #3ee;
+}
+.block:hover .square{
+    transition: 0.5s;
+    opacity: 0.6;
+}
+
+.square {
+    transition: 0.5s;
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    margin: 0 0 0;
+    background-color: #000;
+    opacity: 0.85;
+}
+
+.inner_block {
+    margin: 0 5px 0;
+}
+
+.inner_block h3 {
+    position: absolute;
+    width: 95%;
+    margin: 0;
+    top: 11%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.inner_block p {
+    position: absolute;
+    width: 95%;
+    margin: 0;
+    bottom: 8%;
+}
+
+.tetris {
+    background-image: url("./images/tetris.png");
+    background-size: cover;
+}
+.tetris:hover {
+    background-image: url("./images/tetris.png");
+    background-size: cover;
+}
+
+.puyopuyo {
+    background-image: url("./images/puyopuyo.png");
+    background-size: cover;
+}
+.puyopuyo:hover {
+    background-image: url("./images/puyopuyo.png");
+    background-size: cover;
+}
+
+.lights_out {
+    background-image: url("./images/lights_out.png");
+    background-size: cover;
+}
+.lights_out:hover {
+    background-image: url("./images/lights_out.png");
+    background-size: cover;
+}
+
+.snake_game {
+    background-image: url("./images/snake_game.png");
+    background-size: cover;
+}
+.snake_game:hover {
+    background-image: url("./images/snake_game.png");
+    background-size: cover;
+}
+
+.cellular_automaton {
+    background-image: url("./images/cellular_automaton.png");
+    background-size: cover;
+}
+.cellular_automaton:hover {
+    background-image: url("./images/cellular_automaton.png");
+    background-size: cover;
+}
+
+.elementary_cellular_automaton {
+    background-image: url("./images/elementary_cellular_automaton.png");
+    background-size: cover;
+}
+.elementary_cellular_automaton:hover {
+    background-image: url("./images/elementary_cellular_automaton.png");
+    background-size: cover;
+}
+
+.maze {
+    background-image: url("./images/maze.png");
+    background-size: cover;
+}
+.maze:hover {
+    background-image: url("./images/maze.png");
+    background-size: cover;
+}
+
+.mine_sweeper {
+    background-image: url("./images/mine_sweeper.png");
+    background-size: cover;
+}
+.mine_sweeper:hover {
+    background-image: url("./images/mine_sweeper.png");
+    background-size: cover;
+}
+
+.breakout {
+    background-image: url("./images/breakout.png");
+    background-size: cover;
+}
+.breakout:hover {
+    background-image: url("./images/breakout.png");
+    background-size: cover;
+}
