@@ -1,0 +1,18 @@
+﻿@charset "utf-8";
+
+h2 {
+    background-color: transparent;
+    color: #fff;
+    margin-top: 15px;
+    border: none;
+    font-size: 18px;
+}
+
+a {
+    color: #fff;
+    cursor: help;
+}
+
+.game_main {
+    display: flex;
+}
