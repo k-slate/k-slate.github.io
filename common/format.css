@@ -388,4 +388,8 @@ button:hover {
         z-index: 10000;
         background-color: transparent;
     }
+    
+    .paper {
+        width: 95%;
+    }
 }
