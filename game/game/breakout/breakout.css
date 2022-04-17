@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+h2 {
+    font-size: 18px;
+}
+
+#canvas_area {
+    position: relative;
+}
+
+#explaination {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit- transform: translateY(-50%) translateX(-50%);
+}
+
+#setup {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    align-items: center;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+#info{
+    width: 270px;
+}
+
+#pause{
+    margin-left: 10px;
+}
+
+#others {
+    margin-left: 20px;
+    width: 220px;
+}
