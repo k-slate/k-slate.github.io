@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title id="page_title">マインスイーパー</title>
+        <link rel="stylesheet" type="text/css" href="../../../common/format.css">
+        <link rel="stylesheet" type="text/css" href="../../common/game_format.css">
+        <link rel="stylesheet" type="text/css" href="./mine_sweeper.css">
+        <script type="text/javascript" src="../../common/cell.js"></script>
+        <script type="text/javascript" src="./mine_sweeper.js"></script>
+    </head>
+    <body>
+        <header>
+            <iframe class="header" src="../../../common/header.html" frameborder="0"></iframe>
+        </header>
+        <div class="contents">
+            <iframe class="menu" src="../../../common/menu.html" frameborder="0"></iframe>
+
+            <div class="main">
+                <h1 id="title"><a href="./option/explanation.html"><img class="icon" src="../../../common/images/game.png" />マインスイーパー</a></h1>
+                <div class="game_main">
+                    <div id="canvas_area">
+                        <canvas id="canvas"></canvas>
+                        <div id="setup">
+                            <div class="label" id="rule_area">
+                                <form id="form">
+                                    <p id="setup_text">
+                                        一辺のマスの数: <input type="text" class="textbox" id="edge" value="20" style="width:70px"><br>地雷の数: <input type="text" class="textbox" id="bomb_number" value="40" style="width:70px"><br>
+                                    </p>
+                                </form>
+                            </div>
+                            <button class="special_button" id="reload" onclick="reload()">設定を適用して<br>再読み込み</button>
+                        </div>
+                    </div>
+                    <div id="others">
+                        <p id="time">Time: 00h 00m 00s</p>
+                        <div class="explanation_area">
+                            <h2>セルの発掘</h2>
+                            <p class="explanation">任意のセルの上で左クリックをすることで、そのセルと近傍の地雷に接触していないセルを発掘できる。</p>
+                            <h2>旗の設置</h2>
+                            <p class="explanation">任意のセルの上で右クリックすることで、そのセルの上に旗を置いたり取り除いたりできる。旗が設置されている状態のセルは発掘できない。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <iframe class="footer" src="../../../common/footer.html" frameborder="0"></iframe>
+        </footer>
+    </body>
+</html>
