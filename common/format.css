@@ -337,6 +337,10 @@ button:hover {
     .block {
         width: 49%;
     }
+    
+    .for_four {
+        display: none;
+    }
 }
 
 
