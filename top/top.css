@@ -46,9 +46,3 @@ img {
     transition: 0.5s;
     color: #fff;
 }
-
-@media screen and (max-width: 1024px) {
-    .for_four {
-        display: none;
-    }
-}
