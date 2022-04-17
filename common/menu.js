@@ -5,6 +5,7 @@
     let menu = window.parent.document.getElementsByClassName("menu")[0];
     menu.style.width = "100%";
     menu.style.height = "calc(50% + 80px)";
+    menu.style.paddingBottom = "100px";
     menu.style.borderRadius = "0";
     menu.style.borderBottomWidth = "2px";
     menu.style.borderBottomColor= "white";
@@ -40,6 +41,7 @@ function tight_clear (close_button) {
     let menu = window.parent.document.getElementsByClassName("menu")[0];
     menu.style.width = "100px";
     menu.style.height = menu.style.width;
+    menu.style.paddingBottom = "0";
     menu.style.borderRadius = "50%";
     menu.style.borderBottomWidth = "0";
     menu.style.borderBottomColor= "";
