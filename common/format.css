@@ -389,6 +389,11 @@ button:hover {
         background-color: transparent;
     }
     
+    .main {
+        margin-left: 0;
+        padding: 5px 10px;
+    }
+    
     .paper {
         width: 95%;
     }
