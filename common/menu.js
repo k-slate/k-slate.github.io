@@ -5,7 +5,6 @@
     let menu = window.parent.document.getElementsByClassName("menu")[0];
     menu.style.width = "100%";
     menu.style.height = "calc(50% + 80px)";
-    menu.style.paddingBottom = "100px";
     menu.style.borderRadius = "0";
     menu.style.borderBottomWidth = "2px";
     menu.style.borderBottomColor= "white";
@@ -31,6 +30,7 @@
     
     let menu_body = document.getElementsByTagName("body")[0];
     menu_body.style.backgroundColor = "#181818dd";
+    menu_body.style.paddingBottom = "100px";
 }
 
 
@@ -41,7 +41,6 @@ function tight_clear (close_button) {
     let menu = window.parent.document.getElementsByClassName("menu")[0];
     menu.style.width = "100px";
     menu.style.height = menu.style.width;
-    menu.style.paddingBottom = "0";
     menu.style.borderRadius = "50%";
     menu.style.borderBottomWidth = "0";
     menu.style.borderBottomColor= "";
@@ -68,4 +67,5 @@ function tight_clear (close_button) {
     
     let menu_body = document.getElementsByTagName("body")[0];
     menu_body.style.backgroundColor = "transparent"
+    menu_body.style.paddingBottom = "0";
 }
