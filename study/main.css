@@ -99,3 +99,20 @@
     transition: all 200ms 0s ease;
     height: calc(100% - 6px);
 }
+
+
+
+@media screen and (max-width: 1024px) {
+    .drawer a {
+        padding: 0 5px;
+        line-height: 25px;
+    }
+}
+
+
+@media screen and (max-width: 599px) {
+    .drawer a {
+        padding: 0 5px;
+        line-height: 22px;
+    }
+}
