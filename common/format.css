@@ -330,6 +330,19 @@ button:hover {
         font-size: 14px;
     }
 
+    .greeting {
+        font-size: 16px;
+    }
+
+    .textbox {
+        font-size: 12px;
+    }
+
+    .large_textbox {
+        height: 27px;
+        font-size: 14px;
+    }
+
     .menu {
         width: 120px;
     }
@@ -371,6 +384,19 @@ button:hover {
     }
 
     p {
+        font-size: 12px;
+    }
+
+    .greeting {
+        font-size: 14px;
+    }
+
+    .textbox {
+        font-size: 10px;
+    }
+
+    .large_textbox {
+        height: 24px;
         font-size: 12px;
     }
 
