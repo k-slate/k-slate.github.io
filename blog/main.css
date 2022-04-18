@@ -61,6 +61,11 @@ button {
         font-size: 14px;
     }
 
+    .blog a {
+        padding: 0 5px;
+        line-height: 25px;
+    }
+
     button {
         width: 70px;
     }
@@ -74,6 +79,11 @@ button {
 
     .date {
         font-size: 12px;
+    }
+
+    .blog a {
+        padding: 0 5px;
+        line-height: 22px;
     }
 
     button {
