@@ -12,8 +12,26 @@ h1 a {
     color: #fff;
     cursor: help;
     font-size: 40px;
+    letter-spacing: 1px;
 }
 
 .game_main {
     display: flex;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    h1 a {
+        font-size: 35px;
+        letter-spacing: 0.875px;
+    }
+}
+
+
+@media screen and (max-width: 599px) {
+    h1 a {
+        font-size: 30px;
+        letter-spacing: 0.75px;
+    }
 }
