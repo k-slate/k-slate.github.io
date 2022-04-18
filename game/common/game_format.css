@@ -8,9 +8,10 @@ h2 {
     font-size: 18px;
 }
 
-a {
+h1 a {
     color: #fff;
     cursor: help;
+    font-size: 40px;
 }
 
 .game_main {
