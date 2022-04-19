@@ -274,6 +274,13 @@ button:hover {
     margin-bottom: 10px;
 }
 
+/*ソースコードのclass*/
+.code {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #333;
+}
+
 /*中央寄り、濃いグレー背景のテキストのclass*/
 .text {
     margin: 0 auto;
