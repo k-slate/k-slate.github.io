@@ -274,6 +274,7 @@ button:hover {
     margin-bottom: 10px;
 }
 
+/*中央寄り、濃いグレー背景のテキストのclass*/
 .text {
     margin: 0 auto;
     width: 90%;
@@ -286,6 +287,7 @@ button:hover {
     line-height: normal;
 }
 
+/*buttonが入り込んだpタグにつけるclass*/
 .text_with_button button {
     display: inline-block;
     position: relative;
