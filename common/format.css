@@ -277,7 +277,7 @@ button:hover {
 /*ソースコードのclass*/
 .code {
     width: 100%;
-    padding: 10px 0;
+    line-height: 2.0;
     background-color: #333;
 }
 
