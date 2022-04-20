@@ -1,2 +1,62 @@
+<!DOCTYPE html>
 <html>
-<script type="text/javascript" src="../common/password01.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title id="page_title">墨染めの書架</title>
+        <link rel="stylesheet" type="text/css" href="../../../common/format.css">
+        <link rel="stylesheet" type="text/css" href="../../main.css">
+        <script type="text/javascript" src="../../main.js"></script>
+        <script type="text/javascript" src="../../../common/password01.js"></script>
+    </head>
+    <body>
+        <header>
+            <iframe class="header" src="../../../common/header.html" frameborder="0"></iframe>
+        </header>
+        <div class="contents">
+            <iframe class="menu" src="../../../common/menu.html" frameborder="0"></iframe>
+
+            <div class="main">
+                <h1 id="title"><img class="icon" src="../../../common/images/blog.png" />墨染めの書架</h1>
+                <span class="greeting">来客か、珍しいね。</span>
+                <p>非常に古い文章たちです。流石に、あまり大っぴらにはしたくないよね。</p>
+                <h2>雜錄一覧</h2>
+                <form class="textbox_container">
+                    <div style="width:80%">
+                        <input type="text" class="textbox large_textbox" id="search-text" placeholder="タイトル名で検索" onInput="title_search(this)">
+                        <p class="text_with_button">期間で検索： <input type="date" class="textbox date" id="since">から <input type="date" class="textbox date" id="until">まで　<button onclick="reset_date()">取消</button></p>
+                    </div>
+                </form>
+                <div class="paper" id="monthly-block-container">
+                    <div class="monthly_block" id="2022-04-99">
+                        <h3 class="monthly_title">2022年 4月</h3>
+                        <div class="blog">
+                            <a href="./blog/2022-04/ネット上に公開したって話の詳細.html" id="2022-04-20">ネット上に公開したって話の詳細</a>
+                            <a href="./blog/2022-04/このページをとうとう公開したって話でもする？.html" id="2022-04-18">このページをとうとう公開したって話でもする？</a>
+                        </div>
+                    </div>
+                    <div class="monthly_block" id="2021-10-99">
+                        <h3 class="monthly_title">2021年 10月</h3>
+                        <div class="blog">
+                            <a href="./blog/2021-10/10月になっていた。.html" id="2021-10-06">10月になっていた。</a>
+                        </div>
+                    </div>
+                    <div class="monthly_block" id="2021-09-99">
+                        <h3 class="monthly_title">2021年 9月</h3>
+                        <div class="blog">
+                            <a href="./blog/2021-09/なんかしっくりこない。もっとこう、緩く....html" id="2021-09-23">なんかしっくりこない。もっとこう、緩く...</a>
+                            <a href="./blog/2021-09/時期違いな書き初め、というか意味自体違う。.html" id="2021-09-22">時期違いな書き初め、というか意味自体違う。</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <a href="#">ページトップへ</a>
+                    <a href="../../main.html">雜錄の書庫</a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <iframe class="footer" src="../../../common/footer.html" frameborder="0"></iframe>
+        </footer>
+    </body>
+</html>
