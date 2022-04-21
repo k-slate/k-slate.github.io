@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title id="page_title">１日目のお昼・語録</title>
+        <link rel="stylesheet" type="text/css" href="../../../../common/format.css">
+        <link rel="stylesheet" type="text/css" href="../../../common/common.css">
+        <link rel="stylesheet" type="text/css" href="../../../../common/hidden.css">
+        <script type="text/javascript" src="../../../../common/password01.js"></script>
+    </head>
+    <body>
+        <header>
+            <iframe class="header" src="../../../../common/header.html" frameborder="0"></iframe>
+        </header>
+        <div class="contents">
+            <iframe class="menu" src="../../../../common/menu.html" frameborder="0"></iframe>
+            <div class="main">
+                <h1 id="title"><img class="icon" src="../../../../common/images/blog.png" />１日目のお昼・語録</h1>
+                <p class="date">最終更新日：2020/04/09</p>
+                <div class="paper">
+                    <p>
+　結局のところ、広大な世の中（３次元、２次元問わず）には面白いことが色々とあるわけでして、今後何かの拍子に調べてみたいと思えるような単語を書き綴っときます。<br>
+　前夜の方に書くのは気がひけるし、だからと言っていつかの夜に中途半端に挿入するのもあとあと面倒なので、「１日目のお昼」という感じにしておきますので、では。<br>
+<br>
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::<br>
+書き綴り方<br>
+・それぞれ大きな柱があり、その中に階級別に色々な言葉やURLを並べる<br>
+・階級はインデントによって表現し、それはタブキーによって実行する<br>
+・プログラミングの要領<br>
+・なんでもよし。URLでも。好きに使え。<br>
+<br>
+―――――――――――――――――――――――――――――――――――――――――――――<br>
+<br>
+面白ネタ{<br>
+	<br>
+}<br>
+<br>
+<br>
+科学系{<br>
+	地球惑星科学系{<br>
+		天文学系{<br>
+			アサシン15LH<br>
+			アンノバ<br>
+			青色はぐれ星<br>
+			逃亡星<br>
+			<br>
+		}<br>
+	}<br>
+	<br>
+	化学系{<br>
+		ナパーム<br>
+		<br>
+	}<br>
+<br>
+	数学系{<br>
+		カントールの悪魔の階段<br>
+		クロネッカーの青春の夢<br>
+		ヒルベルトの無限ホテル<br>
+		射影平面<br>
+<br>
+	}<br>
+<br>
+}<br>
+<br>
+https://www.wacom.com/ja-jp/support/?guideTitle=macOS10.14.5にアップデートすると、ワコムタブレット製品が動作しなくなる&guideId=015-474
+                    </p>
+                </div>
+                <div class="bottom">
+                    <a href="#">ページトップへ</a><br>
+                    <a href="../black_main.html">墨染めの書架</a><br>
+                    <a href="../../../main.html">雜錄の書庫</a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <iframe class="footer" src="../../../../common/footer.html" frameborder="0"></iframe>
+        </footer>
+    </body>
+</html>
