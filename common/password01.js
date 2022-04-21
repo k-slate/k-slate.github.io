@@ -14,6 +14,7 @@ function password_check() {
         if (word == key) {
             sessionStorage.setItem("password_no1", word);
             let body = document.getElementsByTagName("body")[0];
+            body.style.visibility = "visible";
             return;
         }
     }
