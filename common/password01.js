@@ -13,7 +13,7 @@ function password_check() {
         }
         if (word == key) {
             sessionStorage.setItem("password_no1", word);
-            cover.style.display = "none";
+            let body = document.getElementsByTagName("body")[0];
             return;
         }
     }
