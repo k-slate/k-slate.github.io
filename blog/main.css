@@ -47,6 +47,12 @@ button {
     width: 80px;
 }
 
+.blackbox{
+    margin: 20px auto 20px;
+    width: 100px;
+    height: 100px;
+}
+
 .bottom {
     margin-top: 50px;
 }
