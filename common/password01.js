@@ -38,5 +38,5 @@ function password_check() {
         history.back();
     }
     
-    setTimeout(check, 1);
+    setTimeout(check, 100);
 }
