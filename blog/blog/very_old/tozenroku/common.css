@@ -1,6 +1,5 @@
 @charset "utf-8";
 
 .break {
-    width: 100%;
     word-break: break-all;
 }
