@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title id="page_title">古文知識ガチャ </title>
+        <link rel="stylesheet" type="text/css" href="../../../../common/format.css">
+        <link rel="stylesheet" type="text/css" href="../../../common/study_format.css">
+        <link rel="stylesheet" type="text/css" href="./kobun.css">
+        <script type="text/javascript" src="./kobun.js"></script>
+    </head>
+    <body>
+        <header>
+            <iframe class="header" src="../../../../common/header.html" frameborder="0"></iframe>
+        </header>
+        <div class="contents">
+            <iframe class="menu" src="../../../../common/menu.html" frameborder="0"></iframe>
+
+            <div class="main">
+                <h1 id="title"><img class="icon" src="../../../../common/images/study.png" />古文知識ガチャ</h1>
+                
+                <div  id="items_container">
+                    <h2>ガチャを引く</h2>
+                    <p>引きたい項目を選んでね！</p>
+                    <div class="block_container">
+                        <div class="block">
+                            <img src="./images/全項目.png" />
+                            <div class="square">
+                                <div class="circle" onclick="all_items_random()" id="all_items"></div>
+                                <div class="inner_block">
+                                    <h3>全項目</h3>
+                                </div>
+                            </div>
+                            <p>もしくは</p>
+                            <button onclick="all_items_all()">全てを引く</button>
+                        </div>
+                        <div class="block">
+                            <img src="./images/助動詞.png" />
+                            <div class="square">
+                                <div class="circle" onclick="jyodoshi_random()" id="jyodoshi"></div>
+                                <div class="inner_block">
+                                    <h3>助動詞</h3>
+                                </div>
+                            </div>
+                            <p>もしくは</p>
+                            <button onclick="jyodoshi_all()">全てを引く</button>
+                        </div>
+                        <div class="block">
+                            <img src="./images/助詞.png" />
+                            <div class="square">
+                                <div class="circle" onclick="jyoshi_random()" id="jyoshi"></div>
+                                <div class="inner_block">
+                                    <h3>助詞</h3>
+                                </div>
+                            </div>
+                            <p>もしくは</p>
+                            <button onclick="jyoshi_all()">全てを引く</button>
+                        </div>
+                        <div class="block">
+                            <img src="./images/識別.png" />
+                            <div class="square">
+                                <div class="circle" onclick="distingish_random()" id="distingish"></div>
+                                <div class="inner_block">
+                                    <h3>識別</h3>
+                                </div>
+                            </div>
+                            <p>もしくは</p>
+                            <button onclick="distingish_all()">全てを引く</button>
+                        </div>
+                    </div>
+                    <h2>トラブルシューティング</h2>
+                    <p>
+                    このガチャはJavascriptをじゃんじゃん使ったかなり動的なページになっているので、トラブルが発生することがあります。そんなときの手引き。<br>
+                    こんなところに書かれたって使い物にならないって？はい、私もそう思います。
+                    <br><br>・ボタンが押せません<br>
+                    デザインが崩れてしまったのでしょう。特に「識別」ではよく起こることです。このページを開いているウィンドウからフォーカスを外す、つまりデスクトップ画面や他のウィンドウをクリックすることで治ります。一度治ってしまえば、またこのページを開いているウィンドウにフォーカスを戻しても大丈夫です。安心して続けてください。
+                    <br><br>・デザインが崩れてしまいました<br>
+                    ひとつ上に記入したものと同じ状況です。同様の対処で治ります。
+                    <br><br>・灰色の背景だけになってしまい、文字が出てきません<br>
+                    「全項目」の「全てを引く」でたまに起こる現象です。まず一旦ページをリロードしてみてください。それでも治らないようであれば、手立てがないので戻ってきてください。なお、ページを遡るのは時間がかかるので、左側のメニューバーから「智慧の収蔵庫」→「古典」→「古文知識ガチャ」と辿るのが楽です。最後に下にある「浄化」ボタンを押してください。<br>＊まやかしではありません。ちゃんと意味があります。<br>
+                    <button onclick = "clearance()">浄化</button>
+                    <br>・私の疑問がトラブルシューティングに書かれていません<br>
+                    どうしようもありません。ご自身でなんとかしてください。無理ならこのページに戻ってきて、念のため上にある「浄化」ボタンを押しておくとよいでしょう。
+                    </p>
+                    <h2>ガチャを引くにあたって</h2>
+                    <p>
+                    まず、これはあくまで知識の確認用であるということを心に留めておいてください。ただガチャを引いて出てくる問題を解くだけでは、おそらく大した学習効果は期待できないでしょう。「問題はおまけ、重要なのはランダムに助動詞や助詞が降ってくることだ」という認識、言い換えるならば、「これは問題つきフラッシュカードである」という認識でいるとよいかもしれません。<br>
+                    ではどうやって使えばよいのか。ガチャで出てきた言葉や識別について、現段階で自身が持っている最大限の知識を思い浮かべてください。そしてその後、お手持ちの資料を確認して、知識の抜けを洗い出していくのです。そうしてはじめて、このガチャは高い学習効果を得る助けになることでしょう。<br>
+                    以上のような使い方を想定しているため、このガチャに付されている問題の完成度はそこまで高くはありません。場合によっては腑に落ちない問題があるかもしれませんが、ご了承ください。尤も正しくないことは載せないように細心の注意を払っています。<br>
+                    また、このガチャの中身は縦書きになっているため、文字や表の大きさが変わった際、ページ全体のデザインが崩壊する可能性が高くなっています。それを防ぐため、画面やタブの大きさにかかわらず文字や表の大きさを一定にしています。スマートフォンなどの小さい画面では上下左右にスクロールしないとページ全体が見られなくなってしまっていますが、どうかご理解ください。
+                    </p>
+                </div>
+            </div>
+        </div>    
+        <footer>
+            <iframe class="footer" src="../../../../common/footer.html" frameborder="0"></iframe>
+        </footer>
+    </body>
+</html>
