@@ -1,6 +1,6 @@
 onload = function() {
     setting();
-    move();
+    word_select();
 }
 
 const dictionary = [
@@ -439,7 +439,7 @@ function setting() {
 }
 
     
-function move() {
+function word_select() {
     let chosen = Math.floor(Math.random()*selected_word_number);
     question = new_dictionary[chosen][0];
     answer= new_dictionary[chosen][1];
@@ -447,7 +447,7 @@ function move() {
     
     selected_word_number --;
     new_dictionary.splice(chosen, 1);
-    
+    button.innerHTML = "決定（Enterキーで代用）";
 }
 
 
