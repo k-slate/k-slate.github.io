@@ -1,5 +1,6 @@
 onload = function() {
     setting();
+    move();
 }
 
 const dictionary = [
