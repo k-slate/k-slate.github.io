@@ -3,9 +3,17 @@ onload = function(){
 }
 
 
-const key = "example";
-
-function password_check() {
+function password_check(number) {
+    let key;
+    switch(number) {
+        case "iGeo":
+            key = "iwillgetagoldmedal";
+            break;
+        default:
+            key = "example";
+            break;
+    }
+    
     let word = sessionStorage.getItem("password_no1");
     for (let i = 3; i > 0; i--) {
         if (word != key) {
