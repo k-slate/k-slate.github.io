@@ -429,7 +429,7 @@ function setting() {
         selected_word_number += section_numbers[i] * whether_selected[i];
     }
     
-    for (let i = 0; i < dictionary.length, i++) {
+    for (let i = 0; i < dictionary.length; i++) {
         if (whether_selected[i] == 0) {
             break;
         }else {
