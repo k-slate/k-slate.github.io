@@ -2,7 +2,7 @@ onload = function() {
     main();
 }
 
-const dictionaly = [
+const dictionary = [
 [
 ["地殻", "crust"],
 ["外核", "outer core"],
@@ -278,3 +278,14 @@ const dictionaly = [
 
 ],
 ];
+
+
+function main() {
+    let selected_sections = document.getElementById("section_selector");
+    let section_numbers = [];
+    for (let i = 0; i < dictionary.length, i++) {
+        section_numbers.push(dictionary[i].length);
+    }
+    
+    
+}
