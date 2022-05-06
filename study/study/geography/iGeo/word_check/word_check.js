@@ -1,5 +1,5 @@
 onload = function() {
-    main();
+    setting();
 }
 
 const dictionary = [
@@ -407,17 +407,27 @@ const dictionary = [
 ];
 
 
-function main() {
-    //let selected_sections = document.getElementById("section_selector");
-    let section_numbers = [];
-    let whether_selected = [1, 1, 0, 0, 0, 0, 0, 0, 0, 0];
-    let selected_word_number = 0;
+
+//let selected_sections = document.getElementById("section_selector");
+let section_numbers = [];
+let whether_selected = [1, 1, 0, 0, 0, 0, 0, 0, 0, 0];
+let selected_word_number = 0;
+let new_dictionary = [];
+
+let Japanese_word = document.getElementById("Japanese_word");
+let words_entry = document.getElementById("words_entry");
+let button = document.getElementById("decision");
+
+let question;
+let answer;
+
+
+function setting() {
     for (let i = 0; i < dictionary.length, i++) {
         section_numbers.push(dictionary[i].length);
         selected_word_number += section_numbers[i] * whether_selected[i];
     }
     
-    let new_dictionary = [];
     for (let i = 0; i < dictionary.length, i++) {
         if (whether_selected[i] == 0) {
             break;
@@ -425,15 +435,31 @@ function main() {
             new_dictionary.concat(dictionary[i]);
         }
     }
+}
+
     
-    let Japanese_word = document.getElementById("Japanese_word");
-    let words_entry = document.getElementById("words_entry");
-    function move() {
-        let chosen = Math.floor(Math.random()*selected_word_number);
-        let question = new_dictionary[chosen][0];
-        let answer= new_dictionary[chosen][1];
-        Japanese_word.innerHTML = question;
+function move() {
+    let chosen = Math.floor(Math.random()*selected_word_number);
+    question = new_dictionary[chosen][0];
+    answer= new_dictionary[chosen][1];
+    Japanese_word.innerHTML = question;
+    
+    selected_word_number --;
+    new_dictionary.splice(chosen, 1);
+    
+}
+
+
+function check() {
+    if (words_entry.value == answer) {
         
+    }else {
+    
     }
+    
+    if (selected_word_number == 0) {
+    
+    }
+    
     
 }
