@@ -462,5 +462,5 @@ function check() {
     
     }
     
-    
+    button.innerHTML = "次へ（Enterキーで代用）";
 }
