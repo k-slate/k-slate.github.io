@@ -424,7 +424,7 @@ let answer;
 
 
 function setting() {
-    for (let i = 0; i < dictionary.length, i++) {
+    for (let i = 0; i < dictionary.length; i++) {
         section_numbers.push(dictionary[i].length);
         selected_word_number += section_numbers[i] * whether_selected[i];
     }
