@@ -1,11 +1,11 @@
-onload = function(){
-    password_check();
+onload = function(keytype){
+    password_check(keytype);
 }
 
 
-function password_check(number) {
+function password_check(keytype) {
     let key;
-    switch(number) {
+    switch(keytype) {
         case "iGeo":
             key = "iwillgetagoldmedal";
             break;
