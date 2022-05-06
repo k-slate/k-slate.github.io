@@ -408,11 +408,32 @@ const dictionary = [
 
 
 function main() {
-    let selected_sections = document.getElementById("section_selector");
+    //let selected_sections = document.getElementById("section_selector");
     let section_numbers = [];
+    let whether_selected = [1, 1, 0, 0, 0, 0, 0, 0, 0, 0];
+    let selected_word_number = 0;
     for (let i = 0; i < dictionary.length, i++) {
         section_numbers.push(dictionary[i].length);
+        selected_word_number += section_numbers[i] * whether_selected[i];
     }
     
+    let new_dictionary = [];
+    for (let i = 0; i < dictionary.length, i++) {
+        if (whether_selected[i] == 0) {
+            break;
+        }else {
+            new_dictionary.concat(dictionary[i]);
+        }
+    }
+    
+    let Japanese_word = document.getElementById("Japanese_word");
+    let words_entry = document.getElementById("words_entry");
+    function move() {
+        let chosen = Math.floor(Math.random()*selected_word_number);
+        let question = new_dictionary[chosen][0];
+        let answer= new_dictionary[chosen][1];
+        Japanese_word.innerHTML = question;
+        
+    }
     
 }
