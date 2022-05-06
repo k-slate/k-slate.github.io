@@ -463,4 +463,5 @@ function check() {
     }
     
     button.innerHTML = "次へ（Enterキーで代用）";
+    button.onclick="word_select()";
 }
