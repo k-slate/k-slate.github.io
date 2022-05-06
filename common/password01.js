@@ -1,12 +1,12 @@
-onload = function(keytype){
-    password_check(keytype);
+onload = function(){
+    password_check();
 }
 
 
 const key = "example";
 
 
-function password_check(keytype) {
+function password_check() {
     let word = sessionStorage.getItem("password_no1");
     for (let i = 3; i > 0; i--) {
         if (word != key) {
