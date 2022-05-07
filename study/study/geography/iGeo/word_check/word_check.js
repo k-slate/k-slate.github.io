@@ -2,7 +2,7 @@ function starter (that) {
     dictionary_making();
     setTimeout(() => {
         setting();
-        word_select();
+        word_select(1);
         that.style.display = "none";
         let quiz_area = document.getElementById("quiz_area");
         quiz_area.style.display = "block";
