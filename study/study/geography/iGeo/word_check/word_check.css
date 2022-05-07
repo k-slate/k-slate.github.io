@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+.main {
+    position: relative;
+}
+
+#starter {
+    margin: 0 auto;
+}
+
+#quiz_area {
+    display: none;
+}
+
+#Japanese_word {
+    text-align: center;
+    font-size: 25px;
+}
+
+#words_entry {
+    display: block;
+    width: 60%;
+    margin: 10px auto;
+}
+
+#decision {
+    margin: auto;
+}
+
+#circle {
+    visibility: hidden;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 80%;
+    border: 15px solid #00ffff;
+    width: 175px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    pointer-events: none
+}
+
+#table_container {
+    display: none;
+}
+
+#miss_title {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: -5px;
+}
+
+table {
+    border-collapse: collapse;
+    border: solid 2px #fff;
+    color: #fff;
+    width: 80%;
+    margin: 10px auto;
+    table-layout: fixed;
+}
+
+
+@media screen and (max-width: 1024px) {
+    #Japanese_word {
+        font-size: 22.5px;
+    }
+    
+    #circle {
+    	top: 95px;
+    	width: 157.5px;
+    	border: 13.5px solid #00ffff;
+    }
+    
+    #miss_title {
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 599px) {
+    #Japanese_word {
+        font-size: 20px;
+    }
+    
+    #circle {
+    	top: 85px;
+    	width: 140px;
+    	border: 12px solid #00ffff;
+    }
+    
+    #miss_title {
+        font-size: 16px;
+    }
+}
