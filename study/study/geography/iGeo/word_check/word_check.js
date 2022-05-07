@@ -16,7 +16,7 @@ let dictionary = [];
 
 //let selected_sections = document.getElementById("section_selector");
 let section_numbers = [];
-let whether_selected = [1, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+let whether_selected = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 let selected_word_number = 0;
 let new_dictionary = [];
 let miss_list = [];
@@ -44,7 +44,6 @@ async function dictionary_making() {
 
 //初期設定
 function setting() {
-    console.log(dictionary);
     Japanese_word = document.getElementById("Japanese_word");
     words_entry = document.getElementById("words_entry");
     button = document.getElementById("decision");
