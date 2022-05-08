@@ -1,6 +1,6 @@
 function starter (that) {
     let checker = setting();
-    if (setting == 1) {
+    if (checker == 1) {
         alert("１つ以上のセクションを選択してね！");
         return;
     }
