@@ -12,6 +12,10 @@
     display: flex;
 }
 
+#section_selector p {
+    display: block;
+}
+
 #quiz_area {
     display: none;
 }
