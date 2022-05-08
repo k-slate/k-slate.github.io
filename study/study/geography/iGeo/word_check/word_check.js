@@ -3,15 +3,16 @@ function starter (that) {
     if (checker == 1) {
         alert("１つ以上のセクションを選択してね！");
         return;
+    }else {
+        word_select(1);
+        let section_selector = document.getElementById("section_selector");
+        section_selector.style.display = "none";
+        that.style.display = "none";
+        let quiz_area = document.getElementById("quiz_area");
+        quiz_area.style.display = "block";
+        let table_container = document.getElementById("table_container");
+        table_container.style.display = "block";
     }
-    word_select(1);
-    let section_selector = document.getElementById("section_selector");
-    section_selector.style.display = "none";
-    that.style.display = "none";
-    let quiz_area = document.getElementById("quiz_area");
-    quiz_area.style.display = "block";
-    let table_container = document.getElementById("table_container");
-    table_container.style.display = "block";
 }
 
 
