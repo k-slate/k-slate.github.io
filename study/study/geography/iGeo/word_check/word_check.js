@@ -1101,7 +1101,7 @@ function check() {
         let new_missing = document.createElement("tr");
         new_missing.innerHTML = `<th>${question}</th><th>${words_entry.value}</th><th>${answer}</th>`;
         miss_table.appendChild(new_missing);
-        miss_list.push([question, answer]);
+        miss_list.push([answer,question]);
         words_entry.style.color = "red";
         words_entry.value = answer;
     }
