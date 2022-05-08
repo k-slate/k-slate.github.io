@@ -1024,11 +1024,16 @@ function setting() {
     circle = document.getElementById("circle");
     miss_table = document.getElementById("miss_table");
     
+    let selected_number = 0;
     for (let i = 1; i < dictionary.length + 1; i++) {
         let section = document.getElementById(`sec${("00"+i).slice(-2)}`);
         if (section.checked) {
             whether_selected[i] = 1;
+            selected_number++;
         }
+    }
+    if (selected_number == 0) {
+        return 1;
     }
 
     for (let i = 0; i < dictionary.length; i++) {
@@ -1043,7 +1048,7 @@ function setting() {
             new_dictionary = new_dictionary.concat(dictionary[i]);
         }
     }
-    return;
+    return 0;
 }
 
 
