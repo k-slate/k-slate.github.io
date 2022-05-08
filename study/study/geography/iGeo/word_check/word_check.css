@@ -8,6 +8,10 @@
     margin: 0 auto;
 }
 
+#section_selector {
+    display: flex;
+}
+
 #quiz_area {
     display: none;
 }
