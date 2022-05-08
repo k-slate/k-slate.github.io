@@ -1,5 +1,9 @@
 function starter (that) {
-    setting();
+    let checker = setting();
+    if (setting == 1) {
+        alert("１つ以上のセクションを選択してね！");
+        return;
+    }
     word_select(1);
     let section_selector = document.getElementById("section_selector");
     section_selector.style.display = "none";
