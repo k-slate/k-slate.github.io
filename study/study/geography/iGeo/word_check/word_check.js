@@ -1066,8 +1066,13 @@ function word_select(attribute = 0) {
     if ((selected_word_number == 0) && (attribute == 0)) {
         alert("走破！お疲れ様！");
         current_status = 1;
-        button.innerHTML = "誤答を周回";
-        button.setAttribute("onclick", "next_round()");
+        if (miss_list.length == 0) {
+            button.innerHTML = "再読み込み";
+            button.setAttribute("onclick", "location.reload");
+        }else {
+            button.innerHTML = "誤答を周回";
+            button.setAttribute("onclick", "next_round()");
+        }
         return;
     }
     
