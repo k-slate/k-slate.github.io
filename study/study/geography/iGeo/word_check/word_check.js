@@ -1,6 +1,8 @@
 function starter (that) {
     setting();
     word_select(1);
+    let section_selector = document.getElementById("section_selector");
+    section_selector.style.display = "none";
     that.style.display = "none";
     let quiz_area = document.getElementById("quiz_area");
     quiz_area.style.display = "block";
