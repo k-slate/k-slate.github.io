@@ -1033,7 +1033,7 @@ function setting() {
     for (let i = 1; i < dictionary.length + 1; i++) {
         let section = document.getElementById(`sec${("00"+i).slice(-2)}`);
         if (section.checked) {
-            whether_selected[i] = 1;
+            whether_selected[i - 1] = 1;
             selected_number++;
         }
     }
