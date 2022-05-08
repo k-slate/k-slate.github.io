@@ -4,6 +4,10 @@
     position: relative;
 }
 
+#explaination {
+    margin-bottom: 2px;
+}
+
 #section_selector {
     display: flex;
     margin: 0;
