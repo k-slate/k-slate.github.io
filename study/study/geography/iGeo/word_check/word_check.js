@@ -1001,7 +1001,6 @@ const dictionary = [
 ]
 ];
 
-//let selected_sections = document.getElementById("section_selector");
 let section_numbers = [];
 let whether_selected = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 let selected_word_number = 0;
