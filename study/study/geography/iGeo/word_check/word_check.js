@@ -82,7 +82,7 @@ const dictionary = [
 ["Antarctica","南極大陸"],
 ["Hadrey cell","ハドレー循環"],
 ["Ferrel cell","フェレル循環"],
-["Polar cell","極循環"],
+["polar cell","極循環"],
 ["ellipse","楕円"]
 ],
 [
