@@ -1,14 +1,17 @@
 function starter (that) {
     dictionary_making();
+    that.style.display = "none";
+    let loading = document.getElementById("loading");
+    loading.style.display = "inline";
     setTimeout(() => {
         setting();
         word_select(1);
-        that.style.display = "none";
+        loading.style.display = "none";
         let quiz_area = document.getElementById("quiz_area");
         quiz_area.style.display = "block";
         let table_container = document.getElementById("table_container");
         table_container.style.display = "block";
-    }, 100);
+    }, 1000);
 }
 
 
