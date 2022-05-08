@@ -1067,6 +1067,7 @@ function word_select(attribute = 0) {
         alert("走破！お疲れ様！");
         current_status = 1;
         if (miss_list.length == 0) {
+            alert("全問題制覇！やったね！");
             button.innerHTML = "再読み込み";
             button.setAttribute("onclick", "location.reload");
         }else {
