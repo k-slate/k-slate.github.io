@@ -1031,7 +1031,7 @@ function setting() {
     
     for (let i = 0; i < dictionary.length; i++) {
         if (whether_selected[i] == 0) {
-            break;
+            continue;
         }else {
             new_dictionary = new_dictionary.concat(dictionary[i]);
         }
