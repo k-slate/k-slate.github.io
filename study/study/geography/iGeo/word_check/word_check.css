@@ -4,17 +4,22 @@
     position: relative;
 }
 
-#starter {
-    margin: 0 auto;
-}
-
 #section_selector {
     display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+#starter {
+    margin: 10px auto 0;
 }
 
 #section_selector p {
     display: block;
     width: 50%;
+    margin: 0;
+    padding: 5px 10px;
 }
 
 #quiz_area {
