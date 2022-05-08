@@ -998,7 +998,7 @@ const dictionary = [
 
 //let selected_sections = document.getElementById("section_selector");
 let section_numbers = [];
-let whether_selected = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+let whether_selected = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 let selected_word_number = 0;
 let new_dictionary = [];
 let miss_list = [];
@@ -1023,6 +1023,13 @@ function setting() {
     button = document.getElementById("decision");
     circle = document.getElementById("circle");
     miss_table = document.getElementById("miss_table");
+    
+    for (let i = 1; i < dictionary.length + 1; i++) {
+        let section = document.getElementById(`sec${("00"+i).slice(-2)}`);
+        if (section.checked) {
+            whether_selected[i] = 1;
+        }
+    }
 
     for (let i = 0; i < dictionary.length; i++) {
         section_numbers.push(dictionary[i].length);
