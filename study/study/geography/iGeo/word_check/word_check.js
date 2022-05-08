@@ -1068,7 +1068,7 @@ function word_select(attribute = 0) {
         if (miss_list.length == 0) {
             alert("全問題制覇！やったね！");
             button.innerHTML = "再読み込み";
-            button.setAttribute("onclick", "location.reload");
+            button.setAttribute("onclick", "location.reload()");
         }else {
             button.innerHTML = "誤答を周回";
             button.setAttribute("onclick", "next_round()");
