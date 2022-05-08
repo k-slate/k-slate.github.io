@@ -14,6 +14,7 @@
 
 #section_selector p {
     display: block;
+    width: 50%;
 }
 
 #quiz_area {
