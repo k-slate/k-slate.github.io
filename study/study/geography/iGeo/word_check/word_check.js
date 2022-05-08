@@ -68,7 +68,7 @@ const dictionary = [
 ["meridian","子午線"],
 ["longitude","経度"],
 ["latitude","緯度"],
-["Earth’s rotation","自転"],
+["Earth's rotation","自転"],
 ["troposphere","対流圏"],
 ["mesosphere","中間圏"],
 ["thermosphere","熱圏"],
