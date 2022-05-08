@@ -73,6 +73,7 @@ table {
     width: 80%;
     margin: 10px auto;
     table-layout: fixed;
+    font-size: 16px;
 }
 
 
@@ -90,6 +91,10 @@ table {
     #miss_title {
         font-size: 18px;
     }
+    
+    table {
+        font-size: 14px;
+    }
 }
 
 
@@ -106,5 +111,9 @@ table {
     
     #miss_title {
         font-size: 16px;
+    }
+    
+    table {
+        font-size: 12px;
     }
 }
