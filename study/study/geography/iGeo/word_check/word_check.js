@@ -111,7 +111,7 @@ const dictionary = [
 ["granite","花崗岩"],
 ["diorite","閃緑岩"],
 ["gabbro","斑糲岩"],
-["carboniferous","石炭紀"],
+["Carboniferous","石炭紀"],
 ["chalk","チョーク (鉱物)"],
 ["deposit","堆積する"],
 ["erode","浸食する"],
