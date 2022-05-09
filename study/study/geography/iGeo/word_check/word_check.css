@@ -43,6 +43,7 @@
 
 #decision {
     margin: auto;
+    width: 180px;
 }
 
 #circle {
@@ -86,6 +87,10 @@ table {
         font-size: 22.5px;
     }
     
+    #decision {
+        width: 162px;
+    }
+    
     #circle {
     	top: 95px;
     	width: 157.5px;
@@ -105,6 +110,10 @@ table {
 @media screen and (max-width: 599px) {
     #Japanese_word {
         font-size: 20px;
+    }
+    
+    #decision {
+        width: 144px;
     }
     
     #circle {
