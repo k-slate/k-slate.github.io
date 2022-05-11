@@ -469,7 +469,7 @@ const dictionary = [
 ["podsol","ポドゾル"],
 ["humus","腐食"],
 ["downpour","どしゃ降り"],
-["f ̈ohn","フェーン現象"],
+["föhn","フェーン現象"],
 ["badland","(過耕作による) 荒れ野"],
 ["El Niño","エルニーニョ"],
 ["albedo","反射能"],
