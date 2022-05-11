@@ -423,7 +423,7 @@ const dictionary = [
 ["consumer","消費者"],
 ["decomposer","分解者"],
 ["food chain","食物連鎖"],
-["food web","食物連鎖"],
+["food web","食物網"],
 ["fungus","菌"],
 ["nutrient cycle","栄養の循環"],
 ["temperate","温暖な"],
