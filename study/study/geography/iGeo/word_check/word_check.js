@@ -509,7 +509,7 @@ const dictionary = [
 ["diurnal range","日較差"],
 ["annual range","年較差"],
 ["radiation cooling","放射冷却"],
-["tropical storm","熱帯低気圧"],
+["tropical depression","熱帯低気圧"],
 ["fertility","肥沃"],
 ["pellet","沈殿物"],
 ["aerolian","風成の"],
