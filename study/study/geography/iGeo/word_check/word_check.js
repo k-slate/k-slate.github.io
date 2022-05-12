@@ -596,7 +596,7 @@ const dictionary = [
 ["charcoal","木炭"],
 ["perishable","生鮮食品"],
 ["replant failure","連作障害"],
-["slash-and-barn farming","焼き畑"],
+["slash-and-burn farming","焼き畑"],
 ["geoponic","土壌栽培"],
 ["hydroponic","水耕栽培"],
 ["pest","害虫"],
