@@ -657,7 +657,7 @@ const dictionary = [
 ["textile industry","繊維産業"],
 ["mechanize","機械化する"],
 ["coalfield","炭田"],
-["thermal power stations","火力発電所"],
+["thermal power station","火力発電所"],
 ["synthetic rubber","合成ゴム"],
 ["fracking","水圧破砕法"],
 ["de-industrialisation","非工業化 (空洞化による)"],
