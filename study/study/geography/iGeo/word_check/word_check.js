@@ -660,7 +660,7 @@ const dictionary = [
 ["thermal power station","火力発電所"],
 ["synthetic rubber","合成ゴム"],
 ["fracking","水圧破砕法"],
-["de-industrialisation","非工業化 (空洞化による)"],
+["de-industrialization","非工業化 (空洞化による)"],
 ["footloose industry","普遍原料を利用した立地条件に制約のない工業"],
 ["synthetic resin","合成樹脂"],
 ["natural resin","天然樹脂"],
