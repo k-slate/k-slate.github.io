@@ -757,7 +757,7 @@ const dictionary = [
 ["peripheral area","周辺部"],
 ["fatality","死亡者数"],
 ["canalize","運河にする"],
-["privatisation","民営化"],
+["privatization","民営化"],
 ["concrete","コンクリートで舗装する"],
 ["satellite town","衛星都市"],
 ["de-centralisation","分散化"],
