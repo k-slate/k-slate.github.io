@@ -797,7 +797,7 @@ const dictionary = [
 ["endemic","土地固有の"],
 ["replenish","新たに補給する"],
 ["a third of the world","発展途上国"],
-["colonise","移住する"],
+["colonize","移住する"],
 ["footpath","歩道"],
 ["day tripper","日帰り観光客"],
 ["High Income Country","高所得国"],
