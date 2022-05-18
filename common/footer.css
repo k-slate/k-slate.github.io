@@ -1,1 +1,96 @@
-﻿@charset "utf-8";
+@charset "utf-8";
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+}
+
+#left {
+    margin: 10px 0 0;
+    padding: 5px 10px;
+    height: calc{100%-5px};
+    border-right: 2px solid #282828;
+}
+
+#top_title {
+    margin: 10px auto 0;
+    height: 30%;
+}
+
+.block {
+    transition: 0.5s;
+    width: 110px;
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 0px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    pointer-events: none;
+    background: radial-gradient(#444, #444, #444, #444, #444, #333, #000, #000, #000, #000);
+}
+
+.square {
+    transition: 0.5s;
+    width: 100%;
+    padding-top: 100%;
+    margin: 0;
+    background-color: black;
+}
+
+.block:hover .square {
+    transition: 0.5s;
+    background-color: transparent;
+}
+
+#top_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.block a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 81%;
+    height: 81%;
+    pointer-events: auto;
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+}
+
+#right {
+    position: relative;
+    width: 100%;
+}
+
+#counter {
+    position: absolute;
+    display: block;
+    width: 85px;
+    bottom: 0;
+    right: 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+    #left {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 599px) {
+
+}
