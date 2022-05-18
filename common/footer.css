@@ -79,7 +79,6 @@ body {
 #counter {
     position: absolute;
     display: block;
-    width: 85px;
     bottom: 0;
     right: 0;
 }
