@@ -17,8 +17,8 @@ ul {
 }
 
 li {
-    height: 40px;
     width: 100%;
     border: 1px solid #fff;
     margin: 5px;
+    padding: 0 0 10px;
 }
