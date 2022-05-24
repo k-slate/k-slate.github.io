@@ -11,7 +11,7 @@ button {
     color: white;
     font-size: 20px;
     width: 100%;
-    margin: 5px;
+    padding: 5px;
 }
 
 ul {
@@ -20,5 +20,5 @@ ul {
 
 li {
     width: 100%;
-    padding: 0 0 10px;
+    margin: 0 0 10px;
 }
