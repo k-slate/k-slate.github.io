@@ -12,6 +12,10 @@ a {
     font-size: 20px;
 }
 
+ul {
+    padding-left: 0;
+}
+
 li {
     height: 40px;
 }
