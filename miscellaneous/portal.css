@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+
+img {
+    width: 25px;
+    position: relative;
+    top: 5px;
+}
+
+a {
+    color: white;
+    font-size: 20px;
+}
+
+li {
+    height: 40px;
+}
