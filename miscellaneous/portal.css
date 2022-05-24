@@ -7,9 +7,11 @@ img {
     top: 5px;
 }
 
-a {
+button {
     color: white;
     font-size: 20px;
+    width: 100%;
+    margin: 5px;
 }
 
 ul {
@@ -18,7 +20,5 @@ ul {
 
 li {
     width: 100%;
-    border: 0.5px solid #fff;
-    margin: 5px;
     padding: 0 0 10px;
 }
