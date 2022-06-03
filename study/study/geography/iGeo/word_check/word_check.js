@@ -516,7 +516,7 @@ const dictionary = [
 ["remoteness","隔海度"],
 ["weed","藻・雑草"],
 ["orographic precipitation","地形性降雨"],
-["oscillation","変動"],
+["oscillation","変動・振動"],
 ["algae","藻"],
 ["aquaculture","養殖"],
 ["lichen","地衣類"],
