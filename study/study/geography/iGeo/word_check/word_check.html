@@ -40,6 +40,20 @@
                     </div>
                     <button onclick="starter()" id="starter">開始</button>
                 </div>
+                <button id="open_button" onclick="open_and_close()">
+                    <p>英語以外<br>↓</p>
+                </button>
+                <div id="characters_support">
+                    <div id="characters_container">
+                        <p>クリックでコピー</p>
+                        <div id="button_container">
+                            <button class="copy_button" onclick="copy_character(this)"><input value="ö" readonly></button> 
+                            <button class="copy_button" onclick="copy_character(this)"><input value="ê" readonly></button> 
+                            <button class="copy_button" onclick="copy_character(this)"><input value="ñ" readonly></button>
+                        </div>
+                        <button class="close_button" onclick="open_and_close()">閉じる</button>
+                    </div>
+                </div>
                 <div class="paper" id="quiz_area">
                     <p id="Japanese_word"></p>
                     <input type="text" class="textbox large_textbox" id="words_entry" placeholder="English word:">
