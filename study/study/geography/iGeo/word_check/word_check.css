@@ -81,6 +81,77 @@ table {
     font-size: 16px;
 }
 
+#open_button {
+    display: block;
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    right: 35px;
+    padding: 0 auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 10%;
+    display: none;
+}
+
+#characters_support {
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    text-align: center;
+    border-radius: 8px;
+    border: 0.5px solid white;
+    display: none;
+}
+
+#characters_support p {
+    margin-bottom: 0;
+}
+
+#button_container {
+    margin: 0;
+    padding: 0;
+}
+
+.copy_button {
+    margin: 4px 5px 0;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 10%;
+    font-size: 20px;
+    background-color: transparent;
+}
+.copy_button:hover {
+    background-color: #000;
+}
+
+.copy_button input {
+    font-size: 20px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    color: white;
+    width: 12px;
+    pointer-events:none;
+    transform: translate(0, -12%);
+}
+
+.close_button {
+    width: 80px;
+    padding: 3px 0;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
 
 @media screen and (max-width: 1024px) {
     #Japanese_word {
