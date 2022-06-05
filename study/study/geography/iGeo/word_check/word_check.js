@@ -11,6 +11,8 @@ function starter () {
         quiz_area.style.display = "block";
         let table_container = document.getElementById("table_container");
         table_container.style.display = "block";
+        let open_button = document.getElementById("open_button");
+        open_button.style.display = "block";
     }
 }
 
@@ -1142,3 +1144,22 @@ document.addEventListener('keydown', (event) => {
         }
     }
 });
+
+function open_and_close () {
+    let open_button = document.getElementById("open_button");
+    let characters_support = document.getElementById("characters_support");
+    if (open_button.style.display == "none") {
+        open_button.style.display = "block";
+        characters_support.style.display = "none";
+    } else {
+        open_button.style.display = "none";
+        characters_support.style.display = "block";
+    }
+}
+
+function copy_character(target) {
+    let target_character = target.children[0];
+    console.log(target_character);
+    target_character.select();
+    document.execCommand("Copy");
+}
