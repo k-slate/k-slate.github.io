@@ -989,7 +989,7 @@ const dictionary = [
 ["indicator","経済指標"],
 ["net export","純輸出"],
 ["medium","媒体"],
-["FDI/Foreign-direct investment","海外直接投資(略称/正式名称)"],
+["FDI/foreign direct investment","海外直接投資(略称/正式名称)"],
 ["microfinance","小規模金融"],
 ["devolve","委ねる"],
 ["commonwealth","連邦・国家"]
