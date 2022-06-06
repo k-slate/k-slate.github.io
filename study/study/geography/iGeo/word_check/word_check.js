@@ -980,7 +980,7 @@ const dictionary = [
 ["recipient","援助を受ける国"],
 ["subsidised","補助金を与えられる"],
 ["quotas","(製造・輸出入などの) 規定数量"],
-["Trans-national corporation","多国籍企業"],
+["transnational corporation","多国籍企業"],
 ["interdependence","相互依存"],
 ["tariff","関税"],
 ["dependency","属国"],
