@@ -141,6 +141,10 @@ table {
     width: 12px;
     pointer-events:none;
     transform: translate(0, -12%);
+    outline: none;
+}
+.copy_button input::selection {
+    background-color: transparent;
 }
 
 .close_button {
