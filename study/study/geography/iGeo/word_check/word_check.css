@@ -83,7 +83,7 @@ table {
 
 #open_button {
     display: block;
-    background-color: #333;
+    background-color: #181818;
     position: absolute;
     top: 0;
     right: 35px;
@@ -93,6 +93,9 @@ table {
     border-radius: 10%;
     display: none;
 }
+#open_button:hover {
+    background-color: #333;
+}
 
 #characters_support {
     width: 150px;
@@ -100,7 +103,7 @@ table {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #333;
+    background-color: #181818;
     text-align: center;
     border-radius: 8px;
     border: 0.5px solid white;
@@ -112,12 +115,12 @@ table {
 }
 
 #button_container {
-    margin: 0;
+    margin: -3px 0 0;
     padding: 0;
 }
 
 .copy_button {
-    margin: 4px 5px 0;
+    margin: 0 5px;
     padding: 0;
     display: inline-block;
     position: relative;
@@ -128,7 +131,7 @@ table {
     background-color: transparent;
 }
 .copy_button:hover {
-    background-color: black;
+    background-color: #333;
 }
 
 .copy_button input {
@@ -158,6 +161,7 @@ table {
     position: absolute;
     bottom: 5px;
     left: 50%;
+    background-color: #181818;
     transform: translate(-50%, 0);
 }
 
@@ -184,6 +188,14 @@ table {
     table {
         font-size: 14px;
     }
+    
+    #open_button p, #characters_container p {
+        font-size: 16px;   
+    }
+    
+    .close_button {
+        font-size: 12px;
+    }
 }
 
 
@@ -207,6 +219,14 @@ table {
     }
     
     table {
+        font-size: 12px;
+    }
+    
+    #open_button p, #characters_container p {
+        font-size: 16px;   
+    }
+    
+    .close_button {
         font-size: 12px;
     }
 }
