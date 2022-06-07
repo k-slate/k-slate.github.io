@@ -1159,7 +1159,8 @@ function open_and_close () {
 
 function copy_character(target) {
     let target_character = target.children[0];
-    console.log(target_character);
-    target_character.select();
-    document.execCommand("Copy");
+    //target_character.select();
+    //document.execCommand("Copy");
+    let words_entry = document.getElementById("words_entry");
+    words_entry.value += target_character.value;    
 }
