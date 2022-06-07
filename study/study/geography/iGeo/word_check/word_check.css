@@ -128,7 +128,7 @@ table {
     background-color: transparent;
 }
 .copy_button:hover {
-    background-color: #000;
+    background-color: black;
 }
 
 .copy_button input {
@@ -138,11 +138,14 @@ table {
     padding: 0;
     background-color: transparent;
     color: white;
-    width: 23px;
-    height: 23px;
-    pointer-events:none;
-    transform: translate(0, -4px);
+    width: 25px;
+    height: 25px;
+    pointer-events: none;
+    position: absolute;
+    top: -1px;
+    left: -1px;
     text-align: center;
+    border-radius: 10%;
     outline: none;
 }
 .copy_button input::selection {
