@@ -138,9 +138,11 @@ table {
     padding: 0;
     background-color: transparent;
     color: white;
-    width: 12px;
+    width: 23px;
+    height: 23px;
     pointer-events:none;
-    transform: translate(0, -12%);
+    transform: translate(0, -4px);
+    text-align: center;
     outline: none;
 }
 .copy_button input::selection {
