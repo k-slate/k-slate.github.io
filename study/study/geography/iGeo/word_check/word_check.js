@@ -453,7 +453,7 @@ const dictionary = [
 ["altocumulus","高積雲"],
 ["nimbostratus","乱層雲"],
 ["stratus","層雲"],
-["stratocumulus","層雲"],
+["stratocumulus","層積雲"],
 ["cumulus","積雲"],
 ["cumulonimbus","積乱雲"],
 ["isobar","等圧線"],
