@@ -23,7 +23,7 @@ body {
 
 
 .upper {
-    margin: 0;
+    margin: 2px 0;
     padding: 0;
     width: 100%;
     position: absolute;
@@ -209,6 +209,9 @@ button {
 }
 
 @media screen and (max-height: 60px) {
+    .upper {
+        margin: 0;
+    }
     .open_button {
         display: block;
     }
