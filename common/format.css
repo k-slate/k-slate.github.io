@@ -9,7 +9,7 @@
 
 body {
     background-color: #080808;
-    margin: 10px 20px;
+    margin: 0;
 }
 
 h1 {
@@ -218,6 +218,7 @@ button:hover {
 /*menuとmainが含まれる大きな括り*/
 .contents {
     display: flex;
+    margin: 0 20px;
 }
 
 /*header*/
@@ -334,10 +335,6 @@ button:hover {
 
 
 @media screen and (max-width: 1024px) {
-    body {
-        margin: 8px 16px;
-    }
-    
     .header {
         height: 105px;
     }
@@ -376,6 +373,10 @@ button:hover {
         font-size: 10.5px;
         padding: 6.5px 0 6.5px;
     }
+    
+    .contents {
+        margin: 0 16px;
+    }
 
     .greeting {
         font-size: 16px;
@@ -411,10 +412,6 @@ button:hover {
 
 
 @media screen and (max-width: 599px) {
-    body {
-        margin: 0;
-    }
-    
     .header {
         position: fixed;
         z-index: 10;
@@ -454,6 +451,10 @@ button:hover {
         width: 80px;
         font-size: 9px;
         padding: 6px 0 6px;
+    }
+    
+    .contents {
+        margin: 0;
     }
 
     .greeting {
