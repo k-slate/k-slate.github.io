@@ -37,6 +37,7 @@ a {
     left: 50%;
     transform: translate(-50%, 0);
     vertical-align: middle;
+    z-index: 10;
 }
 
 a img {
@@ -48,9 +49,18 @@ a img {
 a:hover {
     text-decoration: none;
 }
-a:hover img {
+a:hover ~ .title_background {
     transition: 0.5s;
-    background-color: #9cf;
+    opacity: 1;
+}
+
+.title_background {
+    transition: 0.5s;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
 }
 
 
