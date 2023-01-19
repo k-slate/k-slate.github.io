@@ -38,6 +38,10 @@ img {
     align-items: center;
 }
 
+.special_block_right div {
+    width: 100%;
+}
+
 .special_block h3 {
     width: 80%;
     border: none;
@@ -51,6 +55,7 @@ img {
 .special_block p {
     width: 95%;
     margin: 0 auto;
+    text-align: center;
 }
 
 /*pタグに埋め込むクラス*/
