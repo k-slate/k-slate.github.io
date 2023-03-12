@@ -20,6 +20,21 @@ h1 a {
     justify-content: center;
 }
 
+.w400h400 {
+    width: 400px;
+    height: 400px;
+}
+
+.w250h250 {
+    width: 250px;
+    height: 250px;
+}
+
+.w250h500 {
+    width: 250px;
+    height: 500px;
+}
+
 
 
 @media screen and (max-width: 1024px) {
