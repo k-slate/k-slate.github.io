@@ -40,15 +40,13 @@ function main(){
     const magnification = 2;
     let cell_size_x = 30;
     let cell_size_y = 30;
-    const cell_top = 0;
-    const cell_left = 0;
-    const sq_width = 400 * magnification;
+    canvas.width = canvas.clientWidth * magnification;
+    canvas.height = canvas.clientHeight * magnification;
+    const cell_top = 0 * magnification;
+    const cell_left = 0 * magnification;
+    const sq_width = canvas.width  - cell_top * 2;
     const sq_height = sq_width;
     const sq_size = sq_width / cell_size_x;
-    canvas.width = sq_width + cell_top * 2;
-    canvas.height = sq_height + cell_left * 2;
-    canvas.style.width = (canvas.width / magnification) + "px";
-    canvas.style.height = (canvas.height / magnification) + "px";
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     let cell_center = Math.floor(cell_size_x / 2)
     let border = document.defaultView.getComputedStyle(canvas, null).getPropertyValue("border-width").slice(0, -2) - 0;
