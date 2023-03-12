@@ -45,15 +45,13 @@ function main(){
     cell_size_y = cell_size_x;
     であることが望ましい。
     */
+    canvas.width = canvas.clientWidth * magnification;
+    canvas.height = canvas.clientHeight * magnification;
     const cell_top = 0 * magnification;
     const cell_left = 0 * magnification;
-    const sq_width = 250 * magnification;
+    const sq_width = canvas.width  - cell_top * 2;
     const sq_height = sq_width;
     const sq_size = sq_width / cell_size_x;
-    canvas.width = sq_width + cell_top * 2;
-    canvas.height = sq_height + cell_left * 2;
-    canvas.style.width = (canvas.width / magnification) + "px";
-    canvas.style.height = (canvas.height / magnification) + "px";
     let border = document.defaultView.getComputedStyle(canvas, null).getPropertyValue("border-width").slice(0, -2) - 0;
     let count = 0;
     let active = 1;
