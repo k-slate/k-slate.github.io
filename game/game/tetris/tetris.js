@@ -209,7 +209,7 @@ function main(){
     const cell_top = 0 * magnification;
     const cell_left = 0 * magnification;
     const sq_width = canvas.width  - cell_top * 2;
-    const sq_height = canvas.height  - cell_left * 2;
+    const sq_height = sq_width;
     const sq_size = sq_width / cell_size_x;
     let border = document.defaultView.getComputedStyle(canvas, null).getPropertyValue("border-width").slice(0, -2) - 0;
     sub_canvas.width = 5 * sq_size + cell_top * 2;
