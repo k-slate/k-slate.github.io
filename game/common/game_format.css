@@ -1,4 +1,4 @@
-﻿@charset "utf-8";
+@charset "utf-8";
 
 h2 {
     background-color: transparent;
@@ -49,5 +49,31 @@ h1 a {
     h1 a {
         font-size: 30px;
         letter-spacing: 0.75px;
+    }
+    
+    .flexible {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    
+    .flexible #canvas_area, .flexible #others {
+        margin: 0;
+        padding: 0;
+        width: 90vw;
+    }
+    
+    .flexible canvas {
+        width: calc(90vw - 10px);
+        height: calc(90vw - 10px);
+    }
+    
+    .flexible #canvas_area {
+        padding-bottom: 20px;
+        border-bottom: solid 2px #444;
+    }
+    
+    .flexible #others {
+        padding-top: 20px;
     }
 }
