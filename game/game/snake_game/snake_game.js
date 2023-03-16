@@ -114,7 +114,7 @@ function main(){
         //描画
         ctx.clearRect(0, 0, sq_width, sq_height);
         cell.draw_all_cell();
-        score.innerHTML = `Score: ${snake.length - 1}`;
+        score.innerHTML = `${snake.length - 1}`;
     }
     let process = setInterval(move, 100);
     
