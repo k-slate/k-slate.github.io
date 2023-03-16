@@ -4,13 +4,6 @@ h2 {
     font-size: 18px;
 }
 
-#information {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 3px;
-}
-
 #score {
     display: flex;
     align-items: center;
