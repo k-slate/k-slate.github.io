@@ -13,3 +13,9 @@
 #pause_button {
     width: 150px;
 }
+
+@media screen and (max-width: 599px) {
+    #pause_button {
+        width: 120px;
+    }
+}
