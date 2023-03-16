@@ -77,10 +77,10 @@ h1 a {
     
     .flexible #canvas_area {
         padding-bottom: 20px;
-        border-bottom: solid 2px #444;
     }
     
     .flexible #others {
+        border-top: solid 2px #444;
         padding-top: 20px;
     }
 }
