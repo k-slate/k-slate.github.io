@@ -143,8 +143,8 @@ function main(){
     //画面表示の設定
     let sub_title = document.getElementById("sub_title");
     let pause_button = document.getElementById("pause_button");
-    let result = document.getElementById("result");
-    result.innerHTML = `Score: 0`;
+    let score = document.getElementById("score");
+    score.innerHTML = `0`;
     //backgroundの設定
     const background = new Image();
     background.src = "./option/background.jpg"
@@ -612,6 +612,6 @@ function main(){
     
     //ポイントを表示する
     let point_set = (p) => {
-        result.innerHTML = `Score: ${p}`;
+        score.innerHTML = `${p}`;
     }
 }
