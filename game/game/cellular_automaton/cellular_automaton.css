@@ -1,12 +1,5 @@
 @charset "utf-8";
 
-#information {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 3px;
-}
-
 #rule_area{
     display: flex;
     align-items: center;
