@@ -25,9 +25,9 @@ h1 a {
     height: 400px;
 }
 
-.w250h250 {
-    width: 250px;
-    height: 250px;
+.w300h300 {
+    width: 300px;
+    height: 300px;
 }
 
 .w250h500 {
@@ -65,41 +65,69 @@ h1 a {
         align-items: center;
     }
     
+    .flexible #canvas_area {
+        padding-bottom: 20px;
+    }
+    
     .flexible #others {
         margin: 0;
         padding: 0;
+        border-top: solid 2px #444;
+        padding-top: 20px;
+    }
+    
+    .w400 #others {
         width: 400px;
+    }
+    
+    .w300 #others {
+        width: 300px;
     }
 }
 
     
-@media screen and (max-width: 449px) {
-    .flexible canvas {
+@media screen and (max-width: 444px) {
+    .w400 canvas {
         width: calc(90vw - 10px);
         height: calc(90vw - 10px);
     }
     
-    .flexible #canvas_area {
-        padding-bottom: 20px;
-        width: 90vw;
-    }
-    
-    .flexible #others {
-        border-top: solid 2px #444;
-        padding-top: 20px;
+    .w400 #canvas_area, .w400 #others {
         width: 90vw;
     }
 }
 
 @media screen and (max-width: 399px) {
-    #information {
+    .w400 #information {
         display: flex;
         flex-flow: column;
         align-items: center;
         gap: 10px;
     }
     
-    #information .label {
+    .w400 #information .label {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 333px) {
+    .w300 canvas {
+        width: calc(90vw - 10px);
+        height: calc(90vw - 10px);
+    }
+
+    .w300 #canvas_area, .w300 #others {
+        width: 90vw;
+    }
+    
+    .w300 #information {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .w300 #information .label {
         width: 90vw;
     }
 }
