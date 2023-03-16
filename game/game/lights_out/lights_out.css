@@ -4,13 +4,6 @@ h2 {
     font-size: 16px;
 }
 
-#information {
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 3px;
-    align-items: center;
-}
-
 .label {
     display: flex;
     align-items: center;
