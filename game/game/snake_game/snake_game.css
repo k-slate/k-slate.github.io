@@ -10,14 +10,6 @@
     border: solid 0.5px #3ee;
 }
 
-#button_area{
-    margin-left: 10px;
-}
-
-#button_area p {
-    margin-top: -2px;
-}
-
 #pause_button {
-    margin-top: -16px;
+    width: 150px;
 }
