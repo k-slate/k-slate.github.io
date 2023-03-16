@@ -38,6 +38,7 @@ h1 a {
 #information {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-top: 10px;
     margin-bottom: 3px;
 }
@@ -52,7 +53,7 @@ h1 a {
 }
 
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 699px) {
     h1 a {
         font-size: 30px;
         letter-spacing: 0.75px;
@@ -64,12 +65,15 @@ h1 a {
         align-items: center;
     }
     
-    .flexible #canvas_area, .flexible #others {
+    .flexible #others {
         margin: 0;
         padding: 0;
-        width: 90vw;
+        width: 400px;
     }
+}
+
     
+@media screen and (max-width: 449px) {
     .flexible canvas {
         width: calc(90vw - 10px);
         height: calc(90vw - 10px);
@@ -77,10 +81,25 @@ h1 a {
     
     .flexible #canvas_area {
         padding-bottom: 20px;
+        width: 90vw;
     }
     
     .flexible #others {
         border-top: solid 2px #444;
         padding-top: 20px;
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 399px) {
+    #information {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    #information .label {
+        width: 90vw;
     }
 }
