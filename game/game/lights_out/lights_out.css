@@ -1,9 +1,5 @@
 @charset "utf-8";
 
-h2 {
-    font-size: 16px;
-}
-
 .label {
     display: flex;
     align-items: center;
