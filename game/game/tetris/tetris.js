@@ -169,7 +169,7 @@ function main(){
     let sub_title = document.getElementById("sub_title");
     let pause_button = document.getElementById("pause_button");
     let result = document.getElementById("result");
-    result.innerHTML = `Score: 0`;
+    result.innerHTML = `0`;
     //てとりす（画像）の設定
     const tetorisu = new Image();
     tetorisu.src = "./option/てとりす.jpg"
@@ -506,7 +506,7 @@ function main(){
     
     //ポイントを表示する
     let point_set = (p) => {
-        result.innerHTML = `Score: ${p}`;
+        result.innerHTML = `${p}`;
     }
     
     
@@ -627,7 +627,7 @@ function main(){
         pause_button.style.background = "#888888";
         pause_button.innerHTML = "荳榊庄";
         pause_button.style.cursor = "not-allowed";
-        result.innerHTML = "Score: N/A";
+        result.innerHTML = "N/A";
         others.innerHTML = "&ensp;↑&ensp;: 蝗櫁ｻ｢<br>→: 蜿ｳ遘ｻ蜍<br>←: 蟾ｦ遘ｻ蜍<br>&ensp;↓&ensp;: 關ｽ荳";
         setTimeout(grid, 1000, 1);
     }
