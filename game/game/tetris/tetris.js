@@ -333,7 +333,7 @@ function main(){
             }
             return;
         }
-        sub_title.innerHTML = "次に落ちてくるブロック";
+        sub_title.innerHTML = "次のブロック";
         for (let i = 0; i < sub_cell.cell_size_x; i++) {
             for (let j = 0; j < sub_cell.cell_size_y; j++) {
                 sub_cell.set_cell_data(i, j, 1);
@@ -621,7 +621,7 @@ function main(){
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.filter = "none";
         title.innerHTML = "縺ｦ縺ｨ繧翫☆";
-        sub_title.innerHTML = "次に落ちてくるグリッド";
+        sub_title.innerHTML = "次のグリッド";
         button_title.innerHTML = "萓ｿ蛻ｩ縺ｪ繝懊ち繝ｳ";
         button_lock = 1;
         pause_button.style.background = "#888888";
@@ -635,11 +635,7 @@ function main(){
     
     //メッセージを表示する関数
     function message() {
-        alert("こんにちは。");
-        alert("このゲームのプログラムは、もはや修復が効かないほど崩壊してしまったようだ。");
-        alert("１度目にコマンドを起動したとき、コンソールにすでに警告が出力されてたはずなんだけどなあ...");
-        alert("あのとき、内部でなんらかのシステムエラーが起こっていて、無理やり修復したんだよ。見立て通り、２度目は無かったようだね。");
-        alert("さて、基本的にプログラムってのはね、上書きされてない限り強制終了すればなんとかなるもんなんだよ。");
+        alert("さようなら。");
         window.close();
     }
 }
