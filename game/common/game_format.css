@@ -63,6 +63,12 @@ h1 a {
     font-size: 28px;
 }
 
+#others {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
 
 
 @media screen and (max-width: 1024px) {
