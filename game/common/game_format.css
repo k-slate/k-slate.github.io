@@ -18,7 +18,7 @@ h1 a {
     letter-spacing: 1px;
 }
 
-.game_main {
+.always_horizontal {
     display: flex;
     width: 500px;
     margin: auto;
@@ -88,8 +88,8 @@ h1 a {
 }
 
 #control_area {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     background-color: #181818;
     border: solid 2px #282828;
 }
@@ -149,6 +149,62 @@ h1 a {
     }
 }
 
+
+@media screen and (max-width: 555px) {
+    .always_horizontal {
+        width: 90vw;
+    }
+}
+
+
+@media screen and (max-width: 499px) {
+    .always_horizontal {
+        width: 90vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .always_horizontal canvas {
+        border-width: calc(90vw / 450 * 5);
+    }
+    
+    .always_horizontal .w250h500 {
+        width: calc(90vw / 450 * 250);
+        height: calc(90vw / 450 * 500);
+    }
+    
+    .always_horizontal #others {
+        width: calc(90vw / 450 * 180);
+    }
+    
+    .always_horizontal p {
+        font-size: calc(90vw / 450 * 12);
+    }
+    
+    .always_horizontal #score_field {
+        font-size: calc(90vw / 450 * 16);
+    }
+    
+    .always_horizontal #score {
+        font-size: calc(90vw / 450 * 28);
+    }
+    
+    .always_horizontal .w166_67h125 {
+        width: calc(90vw / 450 * 500 / 3);
+        height: calc(90vw / 450 * 125);
+    }
+    
+    .always_horizontal .w125h125 {
+        width: calc(90vw / 450 * 125);
+        height: calc(90vw / 450 * 125);
+    }
+    
+    #control_area {
+        width: calc(90vw / 450 * 180);
+        height: calc(90vw / 450 * 180);
+    }
+}
+
     
 @media screen and (max-width: 444px) {
     .w400 canvas {
@@ -160,6 +216,7 @@ h1 a {
         width: 90vw;
     }
 }
+
 
 @media screen and (max-width: 399px) {
     .w400 #information {
@@ -173,6 +230,7 @@ h1 a {
         width: 90vw;
     }
 }
+
 
 @media screen and (max-width: 333px) {
     .w300 canvas {
