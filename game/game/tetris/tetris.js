@@ -175,7 +175,7 @@ function main(){
     tetorisu.src = "./option/てとりす.jpg"
     const eye = document.getElementById("eye");
     const button_title = document.getElementById("button_title");
-    const others = document.getElementById("others");
+    const control = document.getElementById("control");
     
     
     //canvasの設定
@@ -628,7 +628,7 @@ function main(){
         pause_button.innerHTML = "荳榊庄";
         pause_button.style.cursor = "not-allowed";
         score.innerHTML = "N/A";
-        others.innerHTML = "&ensp;↑&ensp;: 蝗櫁ｻ｢<br>→: 蜿ｳ遘ｻ蜍<br>←: 蟾ｦ遘ｻ蜍<br>&ensp;↓&ensp;: 關ｽ荳";
+        control.innerHTML = "&ensp;↑&ensp;: 蝗櫁ｻ｢<br>→: 蜿ｳ遘ｻ蜍<br>←: 蟾ｦ遘ｻ蜍<br>&ensp;↓&ensp;: 關ｽ荳";
         setTimeout(grid, 1000, 1);
     }
     
