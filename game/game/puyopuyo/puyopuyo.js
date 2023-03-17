@@ -373,7 +373,7 @@ function main(){
     //sub_cell用
     function sub_draw(stop = 0){
         if (stop != 0) {
-            sub_title.innerHTML = "温泉たまご12個パック";
+            sub_title.innerHTML = "たまごパック";
             sub_ctx.clearRect(0, 0, sub_canvas.width, sub_canvas.height);
             for (let i = 0; i < sub_cell.cell_size_x; i++) {
                 for (let j = 0; j < sub_cell.cell_size_y; j++){
@@ -382,7 +382,7 @@ function main(){
             }
             return;
         }
-        sub_title.innerHTML = "次に落ちてくるぷよ";
+        sub_title.innerHTML = "次のぷよ";
         for (let i = 0; i < sub_cell.cell_size_x; i++) {
             for (let j = 0; j < sub_cell.cell_size_y; j++) {
                 sub_cell.set_cell_data(i, j, 0);
