@@ -18,11 +18,18 @@ h1 a {
     letter-spacing: 1px;
 }
 
-.always_horizontal {
+.game_main {
     display: flex;
-    width: 500px;
     margin: auto;
     padding: 0;
+}
+
+.flexible {
+    justify-content: center;
+}
+
+.always_horizontal {
+    width: 500px;
     justify-content: space-between;
 }
 
