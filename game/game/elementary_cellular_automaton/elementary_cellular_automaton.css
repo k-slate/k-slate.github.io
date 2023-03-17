@@ -3,10 +3,10 @@
 .label {
     display: flex;
     align-items: center;
-    height: 90px;
+    height: 110px;
 }
 
-#rule_area{
+#rule_area {
     width: 300px;
 }
 
@@ -17,14 +17,14 @@
 
 #setup_text {
     display: inline;
-    line-height: 1.6;
+    line-height: 2;
 }
 
-#reload{
+#reload {
     margin-left: 10px;
 }
 
-#explanation_area{
+#explanation_area {
     margin-top: 15px;
     margin-left: 20px;
     padding-left: 15px;
@@ -34,4 +34,11 @@
 
 .explanation {
     margin-top: 5px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .label {
+        height: 90px;
+    }
 }
