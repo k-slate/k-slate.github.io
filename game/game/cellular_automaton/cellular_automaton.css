@@ -3,7 +3,7 @@
 #rule_area {
     display: flex;
     align-items: center;
-    height: 80px;
+    height: auto;
     width: 300px;
 }
 
@@ -20,7 +20,7 @@
 #setting_area {
     display: flex;
     width: 100%;
-    height: 80px;
+    height: auto;
 }
 
 #setting_box {
@@ -47,15 +47,4 @@
 
 .explanation {
     margin-top: 5px;
-}
-
-
-@media screen and (max-width: 1024px) {
-    #rule_area {
-        height: 70px;
-    }
-
-    #setting_area {
-        height: 70px;
-    }
 }
