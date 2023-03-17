@@ -54,14 +54,14 @@ h2 {
         height: calc(90vw / 450 * 12);
     }
     
-    #button_title {
-        margin-top: calc(90vw / 450 * 12);
+   #button_title {
+        margin: calc(90vw / 450 * 12) 0 0;
     }
 
     #pause_button{
         width: calc(90vw / 450 * 100);
-        font-size: calc(90vw / 450 * 12);
-        padding: calc(90vw / 450 * 7) 0 calc(90vw / 450 * 7);
+        font-size: calc(90vw / 450 * 9);
+        padding: calc(90vw / 450 * 6) 0 calc(90vw / 450 * 6);
     }
 
     #score_field {
