@@ -149,7 +149,7 @@ function main(){
     const background = new Image();
     background.src = "./option/background.jpg"
     const button_title = document.getElementById("button_title");
-    const others = document.getElementById("others");
+    const control = document.getElementById("control");
     
     
     //canvasの設定
