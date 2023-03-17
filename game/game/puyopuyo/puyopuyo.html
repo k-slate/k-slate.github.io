@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -9,6 +9,7 @@
         <link rel="stylesheet" type="text/css" href="../../../common/format.css">
         <link rel="stylesheet" type="text/css" href="../../common/game_format.css">
         <link rel="stylesheet" type="text/css" href="./puyopuyo.css">
+        <script type="text/javascript" src="../../../common/key_operation.js"></script>
         <script type="text/javascript" src="../../common/cell.js"></script>
         <script type="text/javascript" src="./puyopuyo.js"></script>
     </head>
@@ -44,8 +45,15 @@
                         </div>
 
                         <div id="control_area">
-                            <h2 id="control_title">ーControlー</h2>
-                            <p id="control">&ensp;↑&ensp;: 回転<br>→: 右移動<br>←: 左移動<br>&ensp;↓&ensp;: 落下</p>
+                            <h2 id="control_title">𝓒𝓸𝓷𝓽𝓻𝓸𝓵</h2>
+                            <p id="control_subtitle">矢印キーも使用可能</p>
+                            <div id="control">
+                                <button class="controller" id="ArrowUp" onclick="key_operation(this.id)">▲<br>回転</button>
+                                <div style="width: 100%;"></div>
+                                <button class="controller" id="ArrowLeft" onclick="key_operation(this.id)">◀︎<br>左移動</button>
+                                <button class="controller" id="ArrowDown" onclick="key_operation(this.id)">▼<br>落下</button>
+                                <button class="controller" id="ArrowRight" onclick="key_operation(this.id)">▶︎<br>右移動</button>
+                            </div>
                         </div>
                     </div>
                 </div>
