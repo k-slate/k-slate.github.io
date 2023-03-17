@@ -24,7 +24,7 @@ h2 {
     transition: 1s;
 }
 
-#data {
+#others {
     margin-left: 50px;
     width: 220px;
 }
@@ -46,20 +46,20 @@ h2 {
     margin-bottom: 48px;
 }
 
-#others_area {
+#control_area {
     width: 140px;
     background-color: #181818;
     border: solid 2px #282828;
 }
 
-#control {
-    background-color: #181818;
+#control_title {
+    background-color: transparent;
     margin-top: 5px;
     margin-bottom: 3px;
     text-align: center;
 }
 
-#others {
+#control {
     margin-top: 3px;
     margin-bottom: 5px;
     margin-left: 30px;
