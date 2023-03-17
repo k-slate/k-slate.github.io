@@ -29,24 +29,5 @@ h2 {
 
 #score_field {
     margin-top: 30px;
-    margin-bottom: 48px;
-}
-
-#control_area {
-    width: 140px;
-    background-color: #181818;
-    border: solid 2px #282828;
-}
-
-#control_title{
-    background-color: #181818;
-    margin-top: 5px;
-    margin-bottom: 3px;
-    text-align: center;
-}
-
-#control {
-    margin-top: 3px;
-    margin-bottom: 5px;
-    margin-left: 30px;
+    margin-bottom: 30px;
 }
