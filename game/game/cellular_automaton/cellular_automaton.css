@@ -1,9 +1,9 @@
 @charset "utf-8";
 
-#rule_area{
+#rule_area {
     display: flex;
     align-items: center;
-    height: 70px;
+    height: 80px;
     width: 300px;
 }
 
@@ -20,14 +20,14 @@
 #setting_area {
     display: flex;
     width: 100%;
-    height: 70px;
+    height: 80px;
 }
 
 #setting_box {
     line-height: 2;
 }
 
-#reload{
+#reload {
     margin-left: 10px;
 }
 
@@ -40,11 +40,22 @@
     font-size: 20px;
 }
 
-.explanation_area{
+.explanation_area {
     margin-top: 15px;
     border: solid 2px #282828;
 }
 
 .explanation {
     margin-top: 5px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    #rule_area {
+        height: 70px;
+    }
+
+    #setting_area {
+        height: 70px;
+    }
 }
