@@ -38,7 +38,7 @@ h2 {
 
 #score_field {
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 
@@ -66,6 +66,6 @@ h2 {
 
     #score_field {
         margin-top: calc(90vw / 450 * 30);
-        margin-bottom: calc(90vw / 450 * 30);
+        margin-bottom: calc(90vw / 450 * 10);
     }
 }
