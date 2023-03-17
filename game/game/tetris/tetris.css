@@ -40,3 +40,32 @@ h2 {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+
+@media screen and (max-width: 499px) {
+    h2 {
+        font-size: calc(90vw / 450 * 16);
+    }
+    
+    #eye {
+        top: calc(90vw / 450 * 357);
+        left: calc(90vw / 450 * 199);
+        width: calc(90vw / 450 * 12);
+        height: calc(90vw / 450 * 12);
+    }
+    
+    #button_title {
+        margin-top: calc(90vw / 450 * 12);
+    }
+
+    #pause_button{
+        width: calc(90vw / 450 * 100);
+        font-size: calc(90vw / 450 * 12);
+        padding: calc(90vw / 450 * 7) 0 calc(90vw / 450 * 7);
+    }
+
+    #score_field {
+        margin-top: calc(90vw / 450 * 30);
+        margin-bottom: calc(90vw / 450 * 30);
+    }
+}
