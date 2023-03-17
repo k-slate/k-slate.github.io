@@ -212,10 +212,8 @@ function main(){
     const sq_height = canvas.height  - cell_left * 2;
     const sq_size = sq_width / cell_size_x;
     let border = document.defaultView.getComputedStyle(canvas, null).getPropertyValue("border-width").slice(0, -2) - 0;
-    sub_canvas.width = 5 * sq_size + cell_top * 2;
-    sub_canvas.height = 5 * sq_size + cell_left * 2;
-    sub_canvas.style.width = (sub_canvas.width / magnification) + "px";
-    sub_canvas.style.height = (sub_canvas.height / magnification) + "px";
+    sub_canvas.width = sub_canvas.clientWidth * magnification;
+    sub_canvas.height = sub_canvas.clientHeight * magnification;
     
     
     //cellの初期設定・初期描画
