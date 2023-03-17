@@ -35,6 +35,16 @@ h1 a {
     height: 500px;
 }
 
+.w166_67h125 {
+    width: 166.67px;
+    height: 125px;
+}
+
+.w125h125 {
+    width: 125px;
+    height: 125px;
+}
+
 #information {
     display: flex;
     align-items: center;
