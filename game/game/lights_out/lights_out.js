@@ -119,7 +119,7 @@ function main(){
             if (cell.check_cell_color()){
                 let text = "消灯完了";
                 ctx.fillStyle = "white";
-                ctx.font = "96px serif";
+                ctx.font = `${canvas.clientWidth / 300 * 96}px serif`;
                 ctx.textAlign = "center";
                 ctx.textBaseline = "middle"
                 ctx.fillText(text, canvas.width / 2, canvas.height / 2);
