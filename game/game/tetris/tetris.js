@@ -553,7 +553,7 @@ function main(){
         ctx.filter = "blur(16px)";
         let expand = () => {
             ctx.beginPath();
-            ctx.arc(400, 716, ex_count, 0, 2*Math.PI);
+            ctx.arc(canvas.clientWidth / 250 * 400, canvas.clientWidth / 250 * 716, ex_count, 0, 2 * Math.PI);
             ctx.stroke();
             ctx.fill();
             ex_count++;
@@ -574,10 +574,9 @@ function main(){
                     cell.cell_data[i][j] = 0;
                 }
             }
-            console.warn("システム系統に未知のエラー。修復プログラムを起動します。");
-            console.log("これは、、、思っていたより深刻かも。とりあえず今回に限っては丸め込めるだろうけど、この調子だと次はないだろうね。");
+            console.warn("システム系統に未知のエラー。修復を試みています。");
         }else {
-            console.error("システムに解決不可能なエラー。修復プログラムが起動できません。");
+            console.error("システムに解決不可能なエラー。修復プログラムのリソースが使い果たされました。");
             //臨時
             for (let i = 0; i < cell.cell_size_x; i++){
                 for (let j = 0; j < cell.cell_size_y; j++){
