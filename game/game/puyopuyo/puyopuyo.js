@@ -216,13 +216,13 @@ function main(){
     function first_draw() {
         let text = "Loading...";
         ctx.fillStyle = "white";
-        ctx.font = "64px serif";
+        ctx.font = `${canvas.clientWidth / 250 * 64}px serif`;
         ctx.textAlign = "center";
         ctx.textBaseline = "middle"
         ctx.fillText(text, canvas.width / 2, canvas.height / 2);
         text = "読み込み中";
         sub_ctx.fillStyle = "white";
-        sub_ctx.font = "48px serif";
+        sub_ctx.font = `${sub_canvas.clientWidth / 500 * 3 * 48}px serif`;
         sub_ctx.textAlign = "center";
         sub_ctx.textBaseline = "middle"
         sub_ctx.clearRect(0, 0, sub_canvas.width, sub_canvas.height);
