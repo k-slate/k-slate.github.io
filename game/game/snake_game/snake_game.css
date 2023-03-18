@@ -1,11 +1,27 @@
 @charset "utf-8";
 
+#information_left {
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
 #pause_button {
+    margin-top: 15px;
     width: 150px;
 }
 
 @media screen and (max-width: 599px) {
     #pause_button {
         width: 120px;
+    }
+}
+
+@media screen and (max-width: 444px) {
+    #pause_button {
+        width: calc(90vw / 400 * 120);
+        font-size: calc(90vw / 400 * 9);
+        padding: calc(90vw / 450 * 6) 0 calc(90vw / 450 * 6);
     }
 }
