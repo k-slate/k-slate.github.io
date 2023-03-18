@@ -25,7 +25,7 @@ h1 a {
     touch-action: manipulation;
 }
 
-.flexible {
+.flexible, .always_vertical {
     justify-content: center;
 }
 
@@ -228,39 +228,75 @@ h1 a {
         height: calc(90vw / 450 * 125);
     }
     
-    #control_area {
+    .always_horizontal #control_area {
         width: calc(90vw / 450 * 180);
         height: calc(90vw / 450 * 180);
     }
     
-    #control_title {
+    .always_horizontal #control_title {
         font-size: calc(90vw / 450 * 16);
     }
 
-    #control_subtitle {
+    .always_horizontal #control_subtitle {
         font-size: calc(90vw / 450 * 12);
     }
 
-    #control {
+    .always_horizontal #control {
         row-gap: calc(90vw / 450 * 3);
         width: 100%;
         margin: calc(90vw / 450 * 8) 0 0;
     }
     
-    .controller {
+    .always_horizontal .controller {
         font-size: calc(90vw / 450 * 12);
     }
 }
 
     
 @media screen and (max-width: 444px) {
-    .w400 canvas {
+    .w400 canvas, .always_vertical canvas {
         width: calc(90vw - 10px);
         height: calc(90vw - 10px);
     }
     
-    .w400 #canvas_area, .w400 #others {
+    .w400 #canvas_area, .w400 #others, .always_vertical #canvas_area {
         width: 90vw;
+    }
+    
+    .always_vertical p {
+        font-size: calc(90vw / 400 * 12);
+    }
+    
+    .always_vertical #score_field {
+        width: calc(90vw / 400 * 180);
+        font-size: calc(90vw / 400 * 16);
+    }
+    
+    .always_vertical #score {
+        font-size: calc(90vw / 400 * 28);
+    }
+    
+    .always_vertical #control_area {
+        width: calc(90vw / 400 * 180);
+        height: calc(90vw / 400 * 180);
+    }
+    
+    .always_vertical #control_title {
+        font-size: calc(90vw / 400 * 16);
+    }
+
+    .always_vertical #control_subtitle {
+        font-size: calc(90vw / 400 * 12);
+    }
+
+    .always_vertical #control {
+        row-gap: calc(90vw / 400 * 3);
+        width: 100%;
+        margin: calc(90vw / 400 * 8) 0 0;
+    }
+    
+    .always_vertical .controller {
+        font-size: calc(90vw / 400 * 12);
     }
 }
 
