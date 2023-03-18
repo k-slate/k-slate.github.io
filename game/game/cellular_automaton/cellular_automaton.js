@@ -117,7 +117,6 @@ class Cell extends Cell_prototype{
                     });
                     if (result){
                         this.cell_data[i][j] = 1;
-                        this.redraw_cell(i, j);
                     }
                 }else{
                     let result = this.survive.some((n) => {
@@ -125,11 +124,11 @@ class Cell extends Cell_prototype{
                     });
                     if (!result){
                         this.cell_data[i][j] = 0;
-                        this.redraw_cell(i, j);
                     }
                 }
             }
         }
+        this.draw_all_cell();
     }
 }
 
