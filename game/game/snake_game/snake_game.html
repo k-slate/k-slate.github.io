@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -9,6 +9,7 @@
         <link rel="stylesheet" type="text/css" href="../../../common/format.css">
         <link rel="stylesheet" type="text/css" href="../../common/game_format.css">
         <link rel="stylesheet" type="text/css" href="./snake_game.css">
+        <script type="text/javascript" src="../../../common/key_operation.js"></script>
         <script type="text/javascript" src="../../common/cell.js"></script>
         <script type="text/javascript" src="./snake_game.js"></script>
     </head>
@@ -21,17 +22,32 @@
 
             <div class="main">
                 <h1 id="title"><a href="./option/explanation.html"><img class="icon" src="../../../common/images/game.png" />へびゲーム</a></h1>
-                <div class="game_main flexible w400">
+                <div class="game_main always_vertical">
+                    <div></div>
                     <div id="canvas_area">
                         <canvas class="w400h400" id="canvas"></canvas>
                         <div id="information">
-                            <div class="sub_label label_contents tight_text" id="score_field">
-                                <p>𝓢𝓬𝓸𝓻𝓮</p>
-                                <p id="score">0</p>
+                            <div id="information_left">
+                                <div class="sub_label label_contents tight_text" id="score_field">
+                                    <p>𝓢𝓬𝓸𝓻𝓮</p>
+                                    <p id="score">0</p>
+                                </div>
+                                <button class="special_button" id="pause_button">一時停止（Spaceキー）</button>
                             </div>
-                            <button class="special_button" id="pause_button">一時停止（Spaceキー）</button>
+                            <div id="control_area">
+                                <h2 id="control_title">𝓒𝓸𝓷𝓽𝓻𝓸𝓵</h2>
+                                <p id="control_subtitle">矢印キーも使用可能</p>
+                                <div id="control">
+                                    <button class="controller" id="ArrowUp" onclick="key_operation(this.id)">▲</button>
+                                    <div style="width: 100%;"></div>
+                                    <button class="controller" id="ArrowLeft" onclick="key_operation(this.id)">◀︎</button>
+                                    <button class="controller" id="ArrowDown" onclick="key_operation(this.id)">▼</button>
+                                    <button class="controller" id="ArrowRight" onclick="key_operation(this.id)">▶︎</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div></div>
                 </div>
             </div>
         </div>
