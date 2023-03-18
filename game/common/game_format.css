@@ -263,8 +263,16 @@ h1 a {
         width: 90vw;
     }
     
+    .always_vertical canvas {
+        border-width: calc(90vw / 450 * 5);
+    }
+    
     .always_vertical p {
         font-size: calc(90vw / 400 * 12);
+    }
+    
+    #information {
+        margin-top: calc(90vw / 400 * 10);
     }
     
     .always_vertical #score_field {
