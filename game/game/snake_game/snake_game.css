@@ -20,6 +20,7 @@
 
 @media screen and (max-width: 444px) {
     #pause_button {
+        margin-top: calc(90vw / 400 * 15);
         width: calc(90vw / 400 * 120);
         font-size: calc(90vw / 400 * 9);
         padding: calc(90vw / 450 * 6) 0 calc(90vw / 450 * 6);
