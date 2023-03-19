@@ -407,10 +407,16 @@ function main(){
 
     //クリック時の処理
     canvas.addEventListener('click', (e) => {
+        console.log(right_click_flag);
         if (pause) {
             return;
         }
         let [x, y] = cell.event_to_cell(e.clientX, e.clientY);
+        if (right_click_flag == 1) {
+        	right_click_operation(x, y);
+        	right_click_flag_operation ();
+        	return;
+        }
         if ((x != null) && (y != null)){
             if (start) {
                 start = false;
@@ -431,13 +437,16 @@ function main(){
         let [x, y] = cell.event_to_cell(e.clientX, e.clientY);
         if ((x != null) && (y != null)){
             e.preventDefault();
-            if (start) {
-                start = false;
-                cell.true_cell_setup(bomb_number, x, y);
-                timer_running = setInterval(time_counter ,1000);
-            }
-            cell.flag_setter(x, y);
+            right_click_operation(x, y);
         }
+    }
+    function right_click_operation (x, y) {
+        if (start) {
+            start = false;
+            cell.true_cell_setup(bomb_number, x, y);
+            timer_running = setInterval(time_counter ,1000);
+        }
+        cell.flag_setter(x, y);
     }
     
     
@@ -470,4 +479,25 @@ function reload(){
 function onbeforeunload() {
     sessionStorage.removeItem('edge_ms');
     sessionStorage.removeItem('bomb_number_ms');
+}
+
+
+
+//右クリック補助のための関数
+let right_click_flag = 0;
+function right_click_flag_operation () {
+    if (right_click_flag == 0) {
+        right_click_flag = 1;
+        let right_click_supporter = document.getElementById("right_click_supporter");
+        right_click_supporter.style.background = "#f8f";
+        right_click_supporter.innerHTML = "今、右クリックとして扱われます";
+        return;
+    }
+    if (right_click_flag == 1) {
+        right_click_flag = 0;
+        let right_click_supporter = document.getElementById("right_click_supporter");
+        right_click_supporter.style.background = "#0ff";
+        right_click_supporter.innerHTML = "ここを押して右クリックモードへ";
+        return;
+    }
 }
