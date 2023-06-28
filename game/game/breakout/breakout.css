@@ -4,11 +4,21 @@ h2 {
     font-size: 18px;
 }
 
-#canvas_area {
+#canvas_container {
+    margin: 0;
+    padding: 0;
     position: relative;
 }
 
+.canvas {
+    margin: 0;
+    padding: 0;
+}
+
 #explaination {
+    display: block;
+    margin: 0;
+    padding: 0;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -16,28 +26,54 @@ h2 {
     -webkit- transform: translateY(-50%) translateX(-50%);
 }
 
+#info{
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 7px;
+    left: 7px;
+    transform: translateY(-10%) translateX(0%);
+    -webkit- transform: translateY(-10%) translateX(0%);
+}
+
 #setup {
     display: flex;
     margin-top: 10px;
     margin-bottom: 3px;
     align-items: center;
-}
-
-.label {
-    display: flex;
-    align-items: center;
-    height: 70px;
-}
-
-#info{
-    width: 270px;
+    justify-content: space-between;
 }
 
 #pause{
     margin-left: 10px;
 }
 
+#control_area {
+    height: auto;
+    margin-right: 10px;
+}
+
+#control {
+    margin: 0;
+    padding: 0;
+}
+
 #others {
     margin-left: 20px;
     width: 220px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    #setup {
+        margin-top: 7px;
+    }
+}
+
+
+@media screen and (max-width: 699px) {
+    #setup {
+        margin-top: 5px;
+    }
 }
