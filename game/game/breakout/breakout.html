@@ -9,6 +9,7 @@
         <link rel="stylesheet" type="text/css" href="../../../common/format.css">
         <link rel="stylesheet" type="text/css" href="../../common/game_format.css">
         <link rel="stylesheet" type="text/css" href="./breakout.css">
+        <script type="text/javascript" src="../../../common/key_operation.js"></script>
         <script type="text/javascript" src="./breakout.js"></script>
     </head>
     <body>
@@ -22,16 +23,24 @@
                 <h1 id="title"><a href="./option/explanation.html"><img class="icon" src="../../../common/images/game.png" />ブロック崩し</a></h1>
                 <div class="game_main flexible">
                     <div id="canvas_area">
-                        <canvas id="canvas"></canvas>
-                        <p id="explaination">上矢印キーで弾を発射
-                        </p>
+                        <div id="canvas_container">
+                            <canvas id="canvas"></canvas>
+                            <p id="explaination">上矢印キーで弾を発射
+                            </p>
+                            <p id="info">
+                                残機：5<br>ブロックの残り：225個
+                            </p>
+                        </div>
                         <div id="setup">
-                            <div class="label" id="info">
-                                <p class="label_contents">
-                                    残機：5<br>ブロックの残り：225個
-                                </p>
-                            </div>
                             <button class="special_button" id="pause">一時停止</button>
+                            <div id="control_area">
+                                <div id="control">
+                                    <div style="width: 100%;"></div>
+                                    <button class="controller" id="ArrowLeft" onmousedown="virtual_keydown(this.id)" onmouseup="virtual_keyup()">◀︎<br>左移動</button>
+                                    <button class="controller" id="ArrowUp" onmousedown="virtual_keydown(this.id)" onmouseup="virtual_keyup()">▲<br>発射</button>
+                                    <button class="controller" id="ArrowRight" onmousedown="virtual_keydown(this.id)" onmouseup="virtual_keyup()">▶︎<br>右移動</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
