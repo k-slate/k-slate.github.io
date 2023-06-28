@@ -359,11 +359,11 @@ function main(){
     
     //キーボード入力の処理
     let key = '';
-    document.body.addEventListener('keydown', e => {
+    document.addEventListener('keydown', e => {
         e.preventDefault();
         key = e.key;
     });
-    document.body.addEventListener('keyup', e => {
+    document.addEventListener('keyup', e => {
         key = '';
     });
     const update = () => {
