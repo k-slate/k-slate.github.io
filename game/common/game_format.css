@@ -39,6 +39,11 @@ h1 a {
     height: 400px;
 }
 
+.w375h500 {
+    width: 375px;
+    height: 500px;
+}
+
 .w300h300 {
     width: 300px;
     height: 300px;
@@ -126,9 +131,6 @@ h1 a {
     width: 100%;
     margin: 8px 0 0;
     user-select: none;
-    -webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
 }
 
 .controller {
@@ -268,7 +270,12 @@ h1 a {
     }
     
     .always_vertical canvas {
-        border-width: calc(90vw / 450 * 5);
+        border-width: calc(90vw / 400 * 5);
+    }
+    
+    .always_vertical .w375h500 {
+        width: calc(90vw / 400 * 375);
+        height: calc(90vw / 400 * 500);
     }
     
     .always_vertical p {
