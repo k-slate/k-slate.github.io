@@ -13,7 +13,7 @@ function main(){
     const ctx = canvas.getContext('2d');
     const explaination = document.getElementById("explaination");
     const info_box = document.getElementById('info');
-    const pause_button = document.getElementById('pause');
+    const pause_button = document.getElementById('pause_button');
 
    
     //実際の処理コード
@@ -25,14 +25,12 @@ function main(){
     const block_size_y = 15;
     くらいが丁度いい。
     */
-    const block_top = 20 * magnification;
-    const block_left = 37.5 * magnification;
-    const block_width = 40;
-    const block_height = 20;
-    canvas.width = 750;
-    canvas.height = 1000;
-    canvas.style.width = (canvas.width / magnification) + "px";
-    canvas.style.height = (canvas.height / magnification) + "px";
+    canvas.width = canvas.clientWidth * magnification;
+    canvas.height = canvas.clientHeight * magnification;
+    const block_top = 20 * (canvas.width / 750) * magnification;
+    const block_left = 37.5 * (canvas.width / 750) * magnification;
+    const block_width = 40 * (canvas.width / 750);
+    const block_height = 20 * (canvas.width / 750);
     let border = document.defaultView.getComputedStyle(canvas, null).getPropertyValue("border-width").slice(0, -2) - 0;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     
@@ -72,17 +70,17 @@ function main(){
     let interrupted_time = 0;
     
     //reflectorの初期設定
-    let reflector = [canvas.width/2, canvas.height - 100];
-    const reflector_size_x = 160;
-    let reflector_size = [reflector_size_x, 15];
+    let reflector = [canvas.width/2, canvas.height - 100 * (canvas.width / 750)];
+    const reflector_size_x = 160 * (canvas.width / 750);
+    let reflector_size = [reflector_size_x, 15 * (canvas.width / 750)];
     let reflector_v = 0;
     let reflector_e = 0.5;
     
     //bulletの初期設定
-    let r = 10;
-    let bullet = [canvas.width/2, canvas.height - 100 - reflector_size[1] / 2 - r];
+    let r = 10 * (canvas.width / 750);
+    let bullet = [canvas.width/2, canvas.height - 100 * (canvas.width / 750) - reflector_size[1] / 2 - r];
     let prev_bullet = [];
-    let v = [0, -2];
+    let v = [0, -2 * (canvas.width / 750)];
     let e = 1.01;
     //残機の数
     let remain = 5;
@@ -344,11 +342,11 @@ function main(){
         explaination.innerHTML = "上矢印キーで弾を発射";
         explaination.style.display = "inline";
         //reflectorの再設定
-        reflector = [canvas.width/2, canvas.height - 100];
+        reflector = [canvas.width/2, canvas.height - 100 * (canvas.width / 750)];
         //bulletの再設定
         prev_bullet = [bullet[0], bullet[1]];
-        bullet = [canvas.width/2, canvas.height - 100 - reflector_size[1] / 2 - r];
-        v = [0, -2];
+        bullet = [canvas.width/2, canvas.height - 100 * (canvas.width / 750) - reflector_size[1] / 2 - r];
+        v = [0, -2 * (canvas.width / 750)];
         //再描画
         html_change();
         block_drawer();
@@ -384,13 +382,13 @@ function main(){
             if (reflector[0] + reflector_size[0] / 2 >= canvas.width) {
                 return;
             }
-            reflector_v += 0.5;
+            reflector_v += 0.5 * (canvas.width / 750);
         }
         if (key == "ArrowLeft"){
             if (reflector[0] - reflector_size[0] / 2 <= 0) {
                 return;
             }
-            reflector_v -= 0.5;
+            reflector_v -= 0.5 * (canvas.width / 750);
         }
     };
     key_process = setInterval(update, 20);
