@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+.main {
+    position: relative;
+}
+
+#explaination {
+    margin-bottom: 2px;
+}
+
+#section_selector {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+#starter {
+    margin: 10px auto 0;
+}
+
+#section_selector p {
+    display: block;
+    width: 50%;
+    margin: 0;
+    padding: 5px 10px;
+}
+
+#quiz_area {
+    display: none;
+}
+
+#Japanese_word {
+    text-align: center;
+    font-size: 25px;
+}
+
+#words_entry {
+    display: block;
+    width: 60%;
+    margin: 10px auto;
+}
+
+#decision {
+    margin: auto;
+    width: 180px;
+}
+
+#circle {
+    visibility: hidden;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 80%;
+    border: 15px solid #00ffff;
+    width: 175px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    pointer-events: none
+}
+
+#table_container {
+    display: none;
+}
+
+#miss_title {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: -5px;
+}
+
+table {
+    border-collapse: collapse;
+    border: solid 2px #fff;
+    color: #fff;
+    width: 80%;
+    margin: 10px auto;
+    table-layout: fixed;
+    font-size: 16px;
+}
+
+#open_button {
+    display: block;
+    background-color: #181818;
+    position: absolute;
+    top: 0;
+    right: 35px;
+    padding: 0 auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 10%;
+    display: none;
+}
+#open_button:hover {
+    background-color: #333;
+}
+
+#characters_support {
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #181818;
+    text-align: center;
+    border-radius: 8px;
+    border: 0.5px solid white;
+    display: none;
+}
+
+#characters_support p {
+    margin-bottom: 0;
+}
+
+#button_container {
+    margin: -3px 0 0;
+    padding: 0;
+}
+
+.copy_button {
+    margin: 0 5px;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 10%;
+    font-size: 20px;
+    background-color: transparent;
+}
+.copy_button:hover {
+    background-color: #333;
+}
+
+.copy_button input {
+    font-size: 20px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    color: white;
+    width: 25px;
+    height: 25px;
+    pointer-events: none;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    text-align: center;
+    border-radius: 10%;
+    outline: none;
+}
+.copy_button input::selection {
+    background-color: transparent;
+}
+
+.close_button {
+    width: 80px;
+    padding: 3px 0;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    background-color: #181818;
+    transform: translate(-50%, 0);
+}
+
+
+@media screen and (max-width: 1024px) {
+    #Japanese_word {
+        font-size: 22.5px;
+    }
+    
+    #decision {
+        width: 162px;
+    }
+    
+    #circle {
+    	top: 95px;
+    	width: 157.5px;
+    	border: 13.5px solid #00ffff;
+    }
+    
+    #miss_title {
+        font-size: 18px;
+    }
+    
+    table {
+        font-size: 14px;
+    }
+    
+    #open_button p, #characters_container p {
+        font-size: 16px;   
+    }
+    
+    .close_button {
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 599px) {
+    #Japanese_word {
+        font-size: 20px;
+    }
+    
+    #decision {
+        width: 144px;
+    }
+    
+    #circle {
+    	top: 85px;
+    	width: 140px;
+    	border: 12px solid #00ffff;
+    }
+    
+    #miss_title {
+        font-size: 16px;
+    }
+    
+    table {
+        font-size: 12px;
+    }
+    
+    #open_button p, #characters_container p {
+        font-size: 16px;   
+    }
+    
+    .close_button {
+        font-size: 12px;
+    }
+}

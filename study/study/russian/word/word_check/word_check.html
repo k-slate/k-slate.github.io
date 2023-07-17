@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180" href="/keikamusan/common/favicons/apple-touch-icon-180x180.png">
+        <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/keikamusan/common/favicons/favicon.ico">
+        <title id="page_title">単語チェック</title>
+        <link rel="stylesheet" type="text/css" href="../../../../../common/format.css">
+        <link rel="stylesheet" type="text/css" href="../../../../common/study_format.css">
+        <link rel="stylesheet" type="text/css" href="./word_check.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../common/hidden.css">
+        <script type="text/javascript" src="./word_check.js"></script>
+        <script type="text/javascript" src="../../../../../common/password03.js"></script>
+    </head>
+    <body>
+        <header>
+            <iframe class="header" src="../../../../../common/header.html" frameborder="0"></iframe>
+        </header>
+        <div class="contents">
+            <iframe class="menu" src="../../../../../common/menu.html" frameborder="0"></iframe>
+
+            <div class="main">
+                <h1><img class="icon" src="../../../../../common/images/study.png" />単語チェック</h1>
+                <div id="start_setting">
+                    <p id="explaination">好きなурокを選択しよう！（現在、Урок 12 まで選択できます）</p>
+                    <div class="label" id="section_selector">
+                        <p>
+                            <input type="checkbox" class="checkbox" id="sec01"><label for="sec01">Урок 01</label><br>
+                            <input type="checkbox" class="checkbox" id="sec02"><label for="sec02">Урок 02</label><br>
+                            <input type="checkbox" class="checkbox" id="sec03"><label for="sec03">Урок 03</label><br>
+                            <input type="checkbox" class="checkbox" id="sec04"><label for="sec04">Урок 04</label><br>
+                            <input type="checkbox" class="checkbox" id="sec05"><label for="sec05">Урок 05</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" class="checkbox" id="sec06"><label for="sec06">Урок 06</label><br>
+                            <input type="checkbox" class="checkbox" id="sec07"><label for="sec07">Урок 07</label><br>
+                            <input type="checkbox" class="checkbox" id="sec08"><label for="sec08">Урок 08</label><br>
+                            <input type="checkbox" class="checkbox" id="sec09"><label for="sec09">Урок 09</label><br>
+                            <input type="checkbox" class="checkbox" id="sec10"><label for="sec10">Урок 10</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" class="checkbox" id="sec11"><label for="sec11">Урок 11</label><br>
+                            <input type="checkbox" class="checkbox" id="sec12"><label for="sec12">Урок 12</label><br>
+                            <input type="checkbox" class="checkbox" id="sec13" disabled><label for="sec13">Урок 13</label><br>
+                            <input type="checkbox" class="checkbox" id="sec14" disabled><label for="sec14">Урок 14</label><br>
+                            <input type="checkbox" class="checkbox" id="sec15" disabled><label for="sec15">Урок 15</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" class="checkbox" id="sec16" disabled><label for="sec16">Урок 16</label><br>
+                            <input type="checkbox" class="checkbox" id="sec17" disabled><label for="sec17">Урок 17</label><br>
+                            <input type="checkbox" class="checkbox" id="sec18" disabled><label for="sec18">Урок 18</label><br>
+                            <input type="checkbox" class="checkbox" id="sec19" disabled><label for="sec19">Урок 19</label><br>
+                            <input type="checkbox" class="checkbox" id="sec20" disabled><label for="sec20">Урок 20</label>
+                        </p>
+                    </div>
+                    <button onclick="starter()" id="starter">開始</button>
+                </div>
+                <div class="paper" id="quiz_area">
+                    <p id="Japanese_word"></p>
+                    <input type="text" class="textbox large_textbox" id="words_entry" placeholder="Русское слово:">
+                    <button onclick="check()" id="decision">決定（Enterキーで代用）</button>
+                </div>
+                <div id="circle"></div>
+                <div id="table_container">
+                    <p id="miss_title">誤答一覧</p>
+                    <table border="1" id="miss_table">
+                        <tr>
+                            <th>問題</th>
+                            <th>あなたの解答</th>
+                            <th>正答</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>    
+        <footer>
+            <iframe class="footer" src="../../../../../common/footer.html" frameborder="0"></iframe>
+        </footer>
+    </body>
+</html>
