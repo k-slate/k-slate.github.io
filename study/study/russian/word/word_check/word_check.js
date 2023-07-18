@@ -924,23 +924,3 @@ document.addEventListener('keydown', (event) => {
         }
     }
 });
-
-function open_and_close () {
-    let open_button = document.getElementById("open_button");
-    let characters_support = document.getElementById("characters_support");
-    if (open_button.style.display == "none") {
-        open_button.style.display = "block";
-        characters_support.style.display = "none";
-    } else {
-        open_button.style.display = "none";
-        characters_support.style.display = "block";
-    }
-}
-
-function copy_character(target) {
-    let target_character = target.children[0];
-    //target_character.select();
-    //document.execCommand("Copy");
-    let words_entry = document.getElementById("words_entry");
-    words_entry.value += target_character.value;    
-}
