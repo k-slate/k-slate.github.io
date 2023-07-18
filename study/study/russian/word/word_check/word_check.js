@@ -982,11 +982,15 @@ function check() {
 
 function next_round() {
     new_dictionary = miss_list.slice();
+    localStorage.setItem('miss_list_rwc', miss_list);
     current_status = 0;
     localStorage.setItem('current_status_rwc', current_status);
     miss_list = [];
+    localStorage.setItem('miss_list_rwc', miss_list);
     selected_word_number = new_dictionary.length;
+    localStorage.setItem('selected_word_number', selected_word_number);
     miss_table.innerHTML = "<tr><th>問題</th><th>あなたの解答</th><th>正答</th></tr>";
+    localStorage.setItem('miss_table_rwc', miss_table);
     word_select(1);
 }
 
