@@ -1,22 +1,3 @@
-function starter () {
-    let checker = setting();
-    if (checker == 1) {
-        alert("１つ以上のセクションを選択してね！");
-        return;
-    }else {
-        word_select(1);
-        let start_setting = document.getElementById("start_setting");
-        start_setting.style.display = "none";
-        let quiz_area = document.getElementById("quiz_area");
-        quiz_area.style.display = "block";
-        let table_container = document.getElementById("table_container");
-        table_container.style.display = "block";
-        let open_button = document.getElementById("open_button");
-        open_button.style.display = "block";
-    }
-}
-
-
 const dictionary = [
 [
 ["это","これは〜です"],
@@ -803,15 +784,93 @@ let answer;
 let current_status = 0;
 
 
+//一次元配列を二次元配列にする関数（復元用）
+function onedim_to_twodim(array, size){
+    return array.flatMap((_, i, a) => i % size ? [] : [array.slice(i, i + size)]);
+}
 
-//初期設定
-function setting() {
+
+//前回の続きから始める場合の処理
+function continue_process(){
+    if (localStorage.getItem('running_flag_rwc') == 1) {
+        section_numbers = localStorage.getItem('section_numbers_rwc').split(',').map(Number);
+        whether_selected = localStorage.getItem('whether_selected_rwc').split(',').map(Number);
+        selected_word_number = Number(localStorage.getItem('selected_word_number_rwc'));
+        new_dictionary = onedim_to_twodim(localStorage.getItem('new_dictionary_rwc').split(','), 2);
+        miss_list = onedim_to_twodim(localStorage.getItem('miss_list_rwc').split(','), 2);
+        Japanese_word = document.getElementById("Japanese_word");
+        words_entry = document.getElementById("words_entry");
+        button = document.getElementById("decision");
+        circle = document.getElementById("circle");
+        miss_table = document.getElementById("miss_table");
+        
+        miss_table.innerHTML = localStorage.getItem('miss_table_rwc');
+        question = localStorage.getItem('question_rwc');
+        answer = localStorage.getItem('answer_rwc');
+        current_status = Number(localStorage.getItem('current_status_rwc'));
+        
+        let start_setting = document.getElementById("start_setting");
+        start_setting.style.display = "none";
+        let quiz_area = document.getElementById("quiz_area");
+        quiz_area.style.display = "block";
+        let table_container = document.getElementById("table_container");
+        table_container.style.display = "block";
+        
+        console.log(section_numbers, whether_selected, selected_word_number, new_dictionary, miss_list, miss_table.innerHTML, question, answer, current_status);
+        
+        //最初一問だけ、word_selectでは捌けないのでここで処理する
+        words_entry.style.color = "black";
+        words_entry.value = "";
+        circle.style.visibility = "hidden";
+        if (current_status == 0) {
+            Japanese_word.innerHTML = question;
+            button.innerHTML = "決定（Enterキーで代用）";
+            button.setAttribute("onclick", "check()");
+            circle.style.visibility = "hidden";
+        }
+        else {
+            button.innerHTML = "誤答を周回";
+            button.setAttribute("onclick", "next_round()");
+        }
+    }else {
+        alert("進捗が保存されていません。最初から始めます。");
+        return;
+    }
+}
+
+
+function starter () {
+    if (localStorage.getItem('running_flag_rwc') == 1) {
+        if (confirm("前回の進捗は消去されますが、よろしいですか？") == false) {
+            return;
+        }
+    }
+    
     Japanese_word = document.getElementById("Japanese_word");
     words_entry = document.getElementById("words_entry");
     button = document.getElementById("decision");
     circle = document.getElementById("circle");
     miss_table = document.getElementById("miss_table");
-    
+
+    let checker = setting();
+    if (checker == 1) {
+        alert("１つ以上のセクションを選択してね！");
+        return;
+    }else {
+        localStorage.setItem('running_flag_rwc', 1);
+        word_select(1);
+        let start_setting = document.getElementById("start_setting");
+        start_setting.style.display = "none";
+        let quiz_area = document.getElementById("quiz_area");
+        quiz_area.style.display = "block";
+        let table_container = document.getElementById("table_container");
+        table_container.style.display = "block";
+    }
+}
+
+
+//初期設定
+function setting() {
     let selected_number = 0;
     for (let i = 1; i < dictionary.length + 1; i++) {
         let section = document.getElementById(`sec${("00"+i).slice(-2)}`);
@@ -836,6 +895,9 @@ function setting() {
             new_dictionary = new_dictionary.concat(dictionary[i]);
         }
     }
+    
+    localStorage.setItem('section_numbers_rwc', section_numbers);
+    localStorage.setItem('whether_selected_rwc', whether_selected);
     return 0;
 }
 
@@ -849,8 +911,20 @@ function word_select(attribute = 0) {
     if ((selected_word_number == 0) && (attribute == 0)) {
         alert("走破！お疲れ様！");
         current_status = 1;
+        localStorage.setItem('current_status_rwc', current_status);
+        console.log(localStorage.getItem("current_status_rwc"));
         if (miss_list.length == 0) {
             alert("全問題制覇！やったね！");
+            localStorage.setItem('running_flag_rwc', 0);
+            localStorage.removeItem('section_numbers_rwc');
+            localStorage.removeItem('whether_selected_rwc');
+            localStorage.removeItem('selected_word_number_rwc');
+            localStorage.removeItem('new_dictionary_rwc');
+            localStorage.removeItem('miss_list_rwc');
+            localStorage.removeItem('miss_table_rwc');
+            localStorage.removeItem('question_rwc');
+            localStorage.removeItem('answer_rwc');
+            localStorage.removeItem('current_status_rwc');
             button.innerHTML = "再読み込み";
             button.setAttribute("onclick", "location.reload()");
         }else {
@@ -864,12 +938,16 @@ function word_select(attribute = 0) {
     let chosen = Math.floor(Math.random()*selected_word_number);
     question = new_dictionary[chosen][1];
     answer= new_dictionary[chosen][0];
+    localStorage.setItem('question_rwc', question);
+    localStorage.setItem('answer_rwc', answer);
     Japanese_word.innerHTML = question;
     words_entry.style.color = "black";
     words_entry.value = "";
     
     selected_word_number --;
     new_dictionary.splice(chosen, 1);
+    localStorage.setItem('selected_word_number_rwc', selected_word_number);
+    localStorage.setItem('new_dictionary_rwc', new_dictionary);
     button.innerHTML = "決定（Enterキーで代用）";
     button.setAttribute("onclick", "check()");
     circle.style.visibility = "hidden";
@@ -891,6 +969,8 @@ function check() {
         new_missing.innerHTML = `<th>${question}</th><th>${words_entry.value}</th><th>${answer}</th>`;
         miss_table.appendChild(new_missing);
         miss_list.push([answer,question]);
+        localStorage.setItem('miss_list_rwc', miss_list);
+        localStorage.setItem('miss_table_rwc', miss_table.innerHTML);
         words_entry.style.color = "red";
         words_entry.value = answer;
     }
@@ -903,6 +983,7 @@ function check() {
 function next_round() {
     new_dictionary = miss_list.slice();
     current_status = 0;
+    localStorage.setItem('current_status_rwc', current_status);
     miss_list = [];
     selected_word_number = new_dictionary.length;
     miss_table.innerHTML = "<tr><th>問題</th><th>あなたの解答</th><th>正答</th></tr>";
