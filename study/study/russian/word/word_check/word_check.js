@@ -963,8 +963,6 @@ function word_select(attribute = 0) {
     new_dictionary.splice(chosen, 1);
     localStorage.setItem('selected_word_number_rwc', selected_word_number);
     localStorage.setItem('new_dictionary_rwc', new_dictionary.flat().join('|'));
-    console.log(new_dictionary);
-    console.log(localStorage.getItem("new_dictionary_rwc"));
     button.innerHTML = "決定（Enterキーで代用）";
     button.setAttribute("onclick", "check()");
     circle.style.visibility = "hidden";
@@ -992,12 +990,6 @@ function check() {
         words_entry.value = answer;
     }
     
-    console.log(localStorage.getItem("question_rwc"));
-    console.log(localStorage.getItem("answer_rwc"));
-    console.log(miss_list);
-    console.log(localStorage.getItem("miss_list_rwc"));
-    console.log(localStorage.getItem("miss_table_rwc"));
-    
     button.innerHTML = "次へ（Enterキーで代用）";
     button.setAttribute("onclick", "word_select()");
 }
@@ -1005,11 +997,11 @@ function check() {
 
 function next_round() {
     new_dictionary = miss_list.slice();
-    localStorage.setItem('miss_list_rwc', miss_list);
+    localStorage.setItem('new_dictionary_rwc', new_dictionary.flat().join('|'));
     current_status = 0;
     localStorage.setItem('current_status_rwc', current_status);
     miss_list = [];
-    localStorage.setItem('miss_list_rwc', miss_list);
+    localStorage.setItem('miss_list_rwc', miss_list.flat().join('|'));
     selected_word_number = new_dictionary.length;
     localStorage.setItem('selected_word_number', selected_word_number);
     miss_table.innerHTML = "<tr><th>問題</th><th>あなたの解答</th><th>正答</th></tr>";
