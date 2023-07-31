@@ -660,7 +660,7 @@ function draw(x, y, color) {
     const ctx = canvas.getContext('2d');
     ctx.fillStyle = "rgba(" + color[0] + "," + color[1] + "," + color[2] + "," + color[3] + ")";
     ctx.beginPath();
-    ctx.arc(x, y, 1 * ratio, 0 * Math.PI / 180, 360 * Math.PI / 180, false);
+    ctx.arc(x, y, 1.5 * ratio, 0 * Math.PI / 180, 360 * Math.PI / 180, false);
     ctx.fill();
 }
 
