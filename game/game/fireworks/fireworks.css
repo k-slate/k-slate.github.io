@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+#main {
+    height: 50vh;
+    position: relative;
+}
+
+#start_button {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 20vw;
+    font-size: calc((100vw / 1000) * 20);
+    transform: translateY(-50%) translateX(-50%);
+    -webkit- transform: translateY(-50%) translateX(-50%);
+}
+
+canvas {
+    background-color: #000001;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    display: none;
+}
+
+#close_button {
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-align: center;
+    line-height: 5px;
+    display: none;
+}
