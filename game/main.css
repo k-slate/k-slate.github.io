@@ -13,18 +13,18 @@ h3 {
 .block {
     background-color: transparent;
     border: 0.5px solid;
-    border-color: #777;
+    border-color: var(--line_color_02);
     border-radius: 0px;
     padding: 0 0 0;
     position: relative;
 }
 .block:hover {
     background-color: transparent;
-    border-color: #3ee;
+    border-color: var(--line_color_01);
 }
 .block:hover .square{
     transition: 0.5s;
-    opacity: 0.6;
+    opacity: 0.65;
 }
 
 .square {
@@ -33,8 +33,8 @@ h3 {
     padding-top: 100%;
     position: relative;
     margin: 0 0 0;
-    background-color: #000;
-    opacity: 0.85;
+    background-color: var(--background_color_01);
+    opacity: 0.9;
 }
 
 .inner_block {
