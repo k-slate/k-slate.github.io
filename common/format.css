@@ -1,21 +1,40 @@
 @charset "utf-8";
 
+:root {
+  --background_color_01: #081018;
+  --background_color_02: #182028;
+  --background_color_03: #183058;
+  --background_color_rgba_01: #182028dd;
+  --color_01: #f8fbff;
+  --a_color_01: #acf;
+  --a_color_02: #68f;
+  --line_color_01: #1ae;
+  --line_color_02: #789;
+  --line_color_03: #8ae;
+  --label_color_01: #25303b;
+  --label_color_02: #345;
+  --attract_color_01: #0ff;
+  --attract_color_02: #f0f;
+  --attract_color_03: #f00;
+  --attract_color_rgba_01: #00ffffbb;
+}
+
 * {
     box-sizing: border-box;
-    font-family: "Helvetica", "Arial", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "Hiragino Sans W2", sans-serif;
-    letter-spacing: 0.025em;
+    font-family: "Helvetica", "Arial", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "Hiragino Sans W3", sans-serif;
+    letter-spacing: 0.04em;
     line-height: 1.6;
+    color: var(--color_01);
 }
 
 body {
-    background-color: #080808;
+    background-color: var(--background_color_01);
     margin: 0;
 }
 
 h1 {
     margin-top: 15px;
     margin-bottom: 15px;
-    color: #fff;
     font-size: 40px;
     letter-spacing: 1px;
     font-weight: 500;
@@ -23,53 +42,46 @@ h1 {
 
 h2 {
     margin-top: 50px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     padding-left: 4px;
-    background-color: #181818;
-    color: #fff;
+    background-color: var(--label_color_01);
     font-size: 25px;
     font-weight: normal;
-    border-left: ridge 7px #3ee;
-    border-bottom: groove 2px #3ee;
+    border-left: ridge 7px var(--line_color_01);
+    border-bottom: groove 2px var(--line_color_01);
 }
 
 h3 {
     margin-top: 25px;
     margin-bottom: 5px;
     padding-left: 3px;
-    background-color: #181818;
-    color: #fff;
+    background-color: var(--label_color_01);
     font-size: 20px;
     font-weight: normal;
-    border-left: solid 3px #3ee;
+    border-left: solid 3px var(--line_color_01);
 }
 
 p {
     margin-top: 5px;
-    color: #fff;
     font-size: 16px;
-}
-
-span {
-    color: #fff;
 }
 
 a {
     text-decoration: none;
     transition: 0.5s;
-    color: #18f;
+    color: var(--a_color_01);
     font-size: 16px;
     cursor: pointer;
 }
 a:hover {
     transition: 0.5s;
-    color: #7bf;
+    color: var(--a_color_02);
     text-decoration:underline;
 }
 
 canvas{
-    border: solid 5px #282828;
-    background-color: #000;
+    border: solid 5px var(--line_color_02);
+    background-color: transparent;
     box-sizing: content-box;
 }
 
@@ -77,26 +89,25 @@ button {
     text-decoration: none;
     border: none;
     outline: none;
-    background: transparent;
+    background: var(--background_color_01);
     width: 100px;
     font-size: 12px;
-    color: #fff;
     text-align: center;
     display: block;
     padding: 7px 0 7px;
     cursor: pointer;
     transition: all 0.5s;
-    background: #000;
-    border: solid 0.5px #fff;
+    border: solid 0.5px var(--color_01);
 }
 button:hover {
     transition: all 0.5s;
-    background: #333;
+    background: var(--label_color_02);
 }
 
 .special_button {
     background: linear-gradient(110deg, #b37, #33b, #37b);
     border: none;
+    color: var(--color_01);
 }
 .special_button:hover {
     background: linear-gradient(110deg, #b3b, #55b, #3bb);
@@ -118,8 +129,8 @@ button:hover {
     left: 1px;
     width: 13px;
     height: 13px;
-    border: 1px solid #888;
-    background: #fff;
+    border: 1px solid var(--line_color_02);
+    background: #f8fbff;
     border-radius: 50%;
 }
 .radio:checked + label{
@@ -153,8 +164,8 @@ button:hover {
     left: 0;
     width: 15px;
     height: 15px;
-    border: 1px solid #888;
-    background: #fff;
+    border: 1px solid var(--line_color_02);
+    background: #f8fbff;
     border-radius: 4px;
 }
 .checkbox:checked + label{
@@ -180,33 +191,42 @@ button:hover {
 
 /*文頭挨拶で主に使うclass*/
 .greeting {
-    color: #fff;
-    font-size: 18px;
 }
 
 /*横一行のテキストボックスclass*/
 .textbox {
-    border: solid 1px #888;
+    border: solid 1px var(--line_color_02);
     line-height: 1.2em;
     font-size: 14px;
+    background: #f8fbff;
+    color: #002;
 }
 
 /*横一行のちょっと大きめのテキストボックスclass*/
 .large_textbox {
+    border: solid 1px var(--line_color_02);
     height: 30px;
     font-size: 16px;
+    background: #f8fbff;
+    color: #002;
 }
 
-/*背景が濃いグレー、周囲が水色枠で囲まれた付箋class*/
+/*placeholder*/
+::placeholder {
+    color: #789;
+}
+
+/*背景色があり、周囲が枠で囲まれた付箋class*/
 .label {
-    background-color: #181818;
-    border: solid 0.5px #3ee;
+    background-color: var(--label_color_01);
+    border: solid 0.5px var(--line_color_01);
     padding: 5px;
 }
 
-/*背景が黒、周囲が水色枠で囲まれた付箋class*/
+/*背景が透明、周囲が枠で囲まれた付箋class*/
 .sub_label {
-    border: solid 0.5px #3ee;
+    background-color: transparent;
+    border: solid 0.5px var(--line_color_01);
     padding: 5px;
 }
 
@@ -226,7 +246,7 @@ button:hover {
     width: 100%;
     height: 125px;
     margin-bottom: 5px;
-    border-bottom: solid 2px #444;
+    border-bottom: solid 2px var(--line_color_03);
 }
 
 /*footer*/
@@ -234,7 +254,7 @@ button:hover {
     width: 100%;
     height: 200px;
     margin-top: 10px;
-    border-top: solid 2px #444;
+    border-top: solid 2px var(--line_color_03);
 }
 
 /*menu*/
@@ -245,7 +265,7 @@ button:hover {
     width: 100%;
     height: 270px;
     top: 55px;
-    border-bottom: solid 2px #444;
+    border-bottom: solid 2px var(--line_color_03);
     display: none;
 }
 
@@ -283,14 +303,14 @@ button:hover {
 .code {
     width: 100%;
     line-height: 2.0;
-    background-color: #333;
+    background-color: var(--label_color_01);
 }
 
-/*中央寄り、濃いグレー背景のテキストのclass*/
+/*中央寄り、白背景のテキストのclass*/
 .text {
     margin: 0 auto;
     width: 90%;
-    background-color: #181818;
+    background-color: #fff;
 }
 
 /*狭いところに書く用の、ちょっと詰めたテキストclass*/
@@ -306,16 +326,16 @@ button:hover {
     top: -2px;
 }
 
-/*主にブログ等で用いる、背景が濃いグレーの部分*/
+/*主にブログ等で用いる、背景が薄いグレーの部分*/
 .paper {
     margin: 0 auto;
     padding: 2%;
     width: 90%;
-    background-color: #222;
+    background-color: var(--background_color_02);
 }
 
 .paper h2, .paper h3 {
-    background-color: #333;
+    background-color: var(--label_color_01);
 }
 
 /*paperで、最初のhタグの上側に余分なスペースが出来ないようにするために、最初のhタグにだけ適用するタグ*/
@@ -329,7 +349,7 @@ button:hover {
     height: 600px;
     display: block;
     margin: 0 auto;
-    border: solid 2px #282828;
+    border: solid 2px var(--line_color_01);
 }
 
 

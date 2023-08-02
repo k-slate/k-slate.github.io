@@ -8,13 +8,14 @@ body {
     height: 100%;
     margin: 0 10px;
     display: flex;
+    background: var(--background_color_03);
 }
 
 #left {
     margin: 10px 0 0;
     padding: 5px 10px;
     height: calc{100%-5px};
-    border-right: 2px solid #282828;
+    border-right: 2px solid var(--line_color_03);
     width: 255px;
 }
 
@@ -33,7 +34,7 @@ body {
     padding: 0;
     position: relative;
     pointer-events: none;
-    background: radial-gradient(#444, #444, #444, #444, #444, #333, #000, #000, #000, #000);
+    background: radial-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
 }
 
 .square {
@@ -41,9 +42,8 @@ body {
     width: 100%;
     padding-top: 100%;
     margin: 0;
-    background-color: black;
+    background-color: var(--background_color_03);
 }
-
 .block:hover .square {
     transition: 0.5s;
     background-color: transparent;

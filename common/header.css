@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #222;
+    background-color: var(--background_color_03);
 }
 
 
@@ -80,20 +80,20 @@ a:hover ~ .title_background {
     z-index: 1;
 }
 .open_button {
-    background-color: #0ff;
-    border: 0.5px solid #0ff;
+    background-color: var(--attract_color_01);
+    border: 0.5px solid var(--attract_color_01);
 }
 .open_button:hover {
-    background-color: #0ff;
+    background-color: var(--attract_color_01);
     transition: 0.5s;
     opacity: 1;
 }
 .close_button {
-    background-color: #f0f;
-    border: 0.5px solid #f0f;
+    background-color: var(--attract_color_02);
+    border: 0.5px solid var(--attract_color_02);
 }
 .close_button:hover {
-    background-color: #f0f;
+    background-color: var(--attract_color_02);
     transition: 0.5s;
     opacity: 1;
 }
@@ -103,7 +103,7 @@ a:hover ~ .title_background {
     width: 95%;
     top: 26%;
     left: 28%;
-    color: black;
+    color: var(--background_color_01);
     font-size: 20px;
     opacity: 1;
 }
@@ -112,7 +112,7 @@ a:hover ~ .title_background {
     width: 95%;
     top: 26%;
     left: 34%;
-    color: black;
+    color: var(--background_color_01);
     font-size: 20px;
     opacity: 1;
 }
@@ -134,7 +134,7 @@ a:hover ~ .title_background {
 }
 
 button {
-    color: white;
+    color: var(--color_01);
     font-size: 20px;
     width: 100%;
     padding: 5px;
@@ -154,8 +154,8 @@ button {
     transition: 0.5s;
 }
 .block:hover p{
-    text-shadow: 0 0 3px #000;
-    color: white;
+    text-shadow: 0 0 3px var(--background_color_01);
+    color: var(--color_01);
 }
 
 .square {
