@@ -29,14 +29,14 @@
     text-decoration: none;
     padding: 0 5px;
     line-height: 28px;
-    color: #fff;
+    color: var(--color_01);
     border: 0.5px solid transparent;
 }
 .blog a:hover {
     text-decoration: none;
-    color: #9cf;
-    background-color: #000;
-    border: 0.5px solid #fff;
+    color: var(--a_color_01);
+    background-color: var(--background_color_01);
+    border: 0.5px solid var(--color_01);
 }
 
 h3 {
