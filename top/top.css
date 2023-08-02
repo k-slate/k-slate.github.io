@@ -12,11 +12,12 @@ img {
 }
 
 .special_block {
-    width: 49%;
+    width: 50%;
     aspect-ratio: 9/2;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    border: 0.5px solid var(--label_color_02);
     display: flex;
-    background-color: #222;
+    background-color: var(--background_color_02);
     padding: 0 0 0;
     position: relative;
     transition: 0.5s;
@@ -24,7 +25,7 @@ img {
 }
 .special_block:hover {
     transition: 0.5s;
-    background-color: #111;
+    background-color: var(--label_color_02);
 }
 
 .special_block a {
@@ -48,7 +49,7 @@ img {
     background-color: transparent;
     text-align: center;
     margin: 0 auto;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid var(--color_01);
     margin-bottom: 10px;
 }
 
@@ -73,7 +74,7 @@ img {
 }
 .special_block:hover .blank {
     transition: 0.5s;
-    color: #fff;
+    color: var(--color_01);
 }
 
 
