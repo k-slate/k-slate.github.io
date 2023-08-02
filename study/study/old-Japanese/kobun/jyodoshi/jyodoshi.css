@@ -6,7 +6,7 @@
     width: 1100px;
     height: 660px;
     margin-left: 15px;
-    background-color: #222;
+    background-color: var(--background_color_02);
     writing-mode: vertical-rl;
     position: relative;
 }
@@ -14,11 +14,11 @@
 #starter {
     width: 100%;
     height: 100%;
-    background-color: #000;
+    background-color: var(--background_color_01);
     position: absolute;
     top: 0;
     right: 0;
-    color: #fff;
+    color: var(--color_01);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,23 +26,23 @@
 }
 
  #title_box {
-     background-color: #000;
+     background-color: var(--background_color_01);
  }
  
  #perfect {
-    background-color: #000;
+    background-color: var(--background_color_01);
     position: absolute;
     bottom: 10px;
     right: 10px;
     width: 60px;
     height: 60px;
-    border: 2px solid #f00;
+    border: 2px solid var(--attract_color_03);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 40px;
-    color: #f00;
+    color: var(--attract_color_03);
     visibility: hidden;
  }
  
@@ -53,10 +53,10 @@
 h1 {
     margin: 0 0 0 20px;
     padding: 15px 0;
-    color: #fff;
+    color: var(--color_01);
     font-size: 50px;
     display: inline-block;
-    border: 0.5px solid #fff;
+    border: 0.5px solid var(--color_01);
 }
 
 #decision {
@@ -64,11 +64,11 @@ h1 {
     height: 70px;
     cursor: pointer;
     transition: all 0.5s;
-    background-color: #0aa;
+    background-color: var(--attract_color_rgba_01);
     position: absolute;
     bottom: 10px;
     left: 10px;
-    border: 0.5px solid #0ff;
+    border: 0.5px solid var(--attract_color_01);
     border-radius: 5%;
     display: flex;
     align-items: center;
@@ -79,7 +79,7 @@ h1 {
 }
 #decision:hover{
     transition: all 0.5s;
-    background-color: #0ff;
+    background-color: var(--attract_color_01);
 }
 
 .item_container {
@@ -90,7 +90,7 @@ h2 {
     margin: 0 0 0 10px;
     padding: 7px 3px 7px 0;
     display: inline-block;
-    background-color: #333;
+    background-color: var(--label_color_01);
     border: none;
 }
 
@@ -102,8 +102,8 @@ span{
     margin: 4px 0;
     padding: 10px 3px 10px 2px;
     cursor: pointer;
-    color: #fff;
-    border: 0.5px solid #fff;
+    color: var(--color_01);
+    border: 0.5px solid var(--color_01);
 }
 
 .small{
@@ -116,13 +116,13 @@ span{
 
 table {
   border-collapse: collapse;
-  border: solid 2px #fff;
-  color: #fff;
+  border: solid 2px var(--color_01);
+  color: var(--color_01);
   height: 100%;
 }
 
 th, td {
-  border: solid 1px #888;
+  border: solid 1px var(--line_color_02);
   width: 30px;
 }
 

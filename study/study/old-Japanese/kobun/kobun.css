@@ -29,7 +29,7 @@ img {
     width: 100%;
     padding-top: 100%;
     margin: 0;
-    background-color: black;
+    background-color: var(--background_color_01);
     opacity: 0.0;
     border-radius: 50%;
     pointer-events: auto;

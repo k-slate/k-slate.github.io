@@ -63,7 +63,7 @@
     left: 50%;
     transform: translate(-50%, 0);
     opacity: 80%;
-    border: 15px solid #00ffff;
+    border: 15px solid var(--attract_color_01);
     width: 175px;
     aspect-ratio: 1;
     border-radius: 50%;
@@ -83,8 +83,8 @@
 
 table {
     border-collapse: collapse;
-    border: solid 2px #fff;
-    color: #fff;
+    border: solid 2px var(--color_01);
+    color: var(--color_01);
     width: 80%;
     margin: 10px auto;
     table-layout: fixed;
@@ -104,7 +104,7 @@ table {
     #circle {
     	top: 95px;
     	width: 157.5px;
-    	border: 13.5px solid #00ffff;
+    	border: 13.5px solid var(--attract_color_01);
     }
     
     #miss_title {
@@ -137,7 +137,7 @@ table {
     #circle {
     	top: 85px;
     	width: 140px;
-    	border: 12px solid #00ffff;
+    	border: 12px solid var(--attract_color_01);
     }
     
     #miss_title {

@@ -53,7 +53,7 @@
     left: 50%;
     transform: translate(-50%, 0);
     opacity: 80%;
-    border: 15px solid #00ffff;
+    border: 15px solid var(--attract_color_01);
     width: 175px;
     aspect-ratio: 1;
     border-radius: 50%;
@@ -73,8 +73,8 @@
 
 table {
     border-collapse: collapse;
-    border: solid 2px #fff;
-    color: #fff;
+    border: solid 2px var(--color_01);
+    color: var(--color_01);
     width: 80%;
     margin: 10px auto;
     table-layout: fixed;
@@ -83,7 +83,7 @@ table {
 
 #open_button {
     display: block;
-    background-color: #181818;
+    background-color: var(--background_color_02);
     position: absolute;
     top: 0;
     right: 35px;
@@ -94,7 +94,7 @@ table {
     display: none;
 }
 #open_button:hover {
-    background-color: #333;
+    background-color: var(--label_color_02);
 }
 
 #characters_support {
@@ -103,7 +103,7 @@ table {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #181818;
+    background-color: var(--background_color_02);
     text-align: center;
     border-radius: 8px;
     border: 0.5px solid white;
@@ -131,7 +131,7 @@ table {
     background-color: transparent;
 }
 .copy_button:hover {
-    background-color: #333;
+    background-color: var(--label_color_02);
 }
 
 .copy_button input {
@@ -161,7 +161,7 @@ table {
     position: absolute;
     bottom: 5px;
     left: 50%;
-    background-color: #181818;
+    background-color: var(--background_color_01);
     transform: translate(-50%, 0);
 }
 
@@ -178,7 +178,7 @@ table {
     #circle {
     	top: 95px;
     	width: 157.5px;
-    	border: 13.5px solid #00ffff;
+    	border: 13.5px solid var(--attract_color_01);
     }
     
     #miss_title {
@@ -211,7 +211,7 @@ table {
     #circle {
     	top: 85px;
     	width: 140px;
-    	border: 12px solid #00ffff;
+    	border: 12px solid var(--attract_color_01);
     }
     
     #miss_title {
